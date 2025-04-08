@@ -1,0 +1,3974 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f6dcad650a306ba91800785ecf0ae471 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f6dcad650a306ba91800785ecf0ae471" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f6dcad650a306ba91800785ecf0ae471 = L.map(
+                "map_f6dcad650a306ba91800785ecf0ae471",
+                {
+                    center: [30.0, 30.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cd7cd2411c45dd3709337efac38f3de3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cd7cd2411c45dd3709337efac38f3de3.addTo(map_f6dcad650a306ba91800785ecf0ae471);
+        
+    
+            var marker_cluster_5a5a053d35aa1daf614670003f731f33 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_94e84c9337a2a1e9f70bac8fd5e3d38d = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_6b3ceb798ffd9518dbb358552f2d8e8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e6eb68a86bf99d061fd00fa4d9e284d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c413c216a450341aa851934571c0e836 = $(`<div id="html_c413c216a450341aa851934571c0e836" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1970<br>Température : 0.0380833333333333 °C<br>Précipitations : 785.6 mm<br>CO₂ émis : 461.338 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_3e6eb68a86bf99d061fd00fa4d9e284d.setContent(html_c413c216a450341aa851934571c0e836);
+            
+        
+
+        marker_94e84c9337a2a1e9f70bac8fd5e3d38d.bindPopup(popup_3e6eb68a86bf99d061fd00fa4d9e284d)
+        ;
+
+        
+    
+    
+                marker_94e84c9337a2a1e9f70bac8fd5e3d38d.setIcon(icon_6b3ceb798ffd9518dbb358552f2d8e8e);
+            
+    
+            var marker_b086f2ebc51c948c82dfa4ba8911771f = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_b7b89c93133e7c10e38959b7d7927726 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ef17352b6d60019c17141c7431c59ea = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_24403b165e07c22584d7ec40ff93a5b1 = $(`<div id="html_24403b165e07c22584d7ec40ff93a5b1" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1971<br>Température : -0.0680833333333333 °C<br>Précipitations : 849.7 mm<br>CO₂ émis : 494.427 Mt<br>Catastrophes : nan</div>`)[0];
+                popup_3ef17352b6d60019c17141c7431c59ea.setContent(html_24403b165e07c22584d7ec40ff93a5b1);
+            
+        
+
+        marker_b086f2ebc51c948c82dfa4ba8911771f.bindPopup(popup_3ef17352b6d60019c17141c7431c59ea)
+        ;
+
+        
+    
+    
+                marker_b086f2ebc51c948c82dfa4ba8911771f.setIcon(icon_b7b89c93133e7c10e38959b7d7927726);
+            
+    
+            var marker_39c4bf48b1c8a86e6c4e3289412ac590 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_8055c0254c134e3279aad386ac258c1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_299516587e3833d16134dfa32edb7586 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8aa6b26c83e98a74dc654ce786e453f6 = $(`<div id="html_8aa6b26c83e98a74dc654ce786e453f6" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1972<br>Température : -0.2986666666666667 °C<br>Précipitations : 839.3 mm<br>CO₂ émis : 514.988 Mt<br>Catastrophes : 2.0</div>`)[0];
+                popup_299516587e3833d16134dfa32edb7586.setContent(html_8aa6b26c83e98a74dc654ce786e453f6);
+            
+        
+
+        marker_39c4bf48b1c8a86e6c4e3289412ac590.bindPopup(popup_299516587e3833d16134dfa32edb7586)
+        ;
+
+        
+    
+    
+                marker_39c4bf48b1c8a86e6c4e3289412ac590.setIcon(icon_8055c0254c134e3279aad386ac258c1c);
+            
+    
+            var marker_445cf131bceaba0c4f9659802d8141c1 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_00a179b11a7752eeaf362f2c08153c7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81ebb828d393b0a5da3f75556074419d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_03f842628f1e4a16cef8eb6535bcc567 = $(`<div id="html_03f842628f1e4a16cef8eb6535bcc567" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1973<br>Température : -0.0285833333333333 °C<br>Précipitations : 932.1 mm<br>CO₂ émis : 539.772 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_81ebb828d393b0a5da3f75556074419d.setContent(html_03f842628f1e4a16cef8eb6535bcc567);
+            
+        
+
+        marker_445cf131bceaba0c4f9659802d8141c1.bindPopup(popup_81ebb828d393b0a5da3f75556074419d)
+        ;
+
+        
+    
+    
+                marker_445cf131bceaba0c4f9659802d8141c1.setIcon(icon_00a179b11a7752eeaf362f2c08153c7f);
+            
+    
+            var marker_3b7700f9dd129e786164d7c417412d86 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_a7debcb656fce34a9df9994a3a3e8759 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4fa332354ea6b6245bdde8f5e730119b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d0eca47bddbf54212915c554f3a3233a = $(`<div id="html_d0eca47bddbf54212915c554f3a3233a" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1974<br>Température : 0.11275 °C<br>Précipitations : 856.1 mm<br>CO₂ émis : 521.906 Mt<br>Catastrophes : 1.0</div>`)[0];
+                popup_4fa332354ea6b6245bdde8f5e730119b.setContent(html_d0eca47bddbf54212915c554f3a3233a);
+            
+        
+
+        marker_3b7700f9dd129e786164d7c417412d86.bindPopup(popup_4fa332354ea6b6245bdde8f5e730119b)
+        ;
+
+        
+    
+    
+                marker_3b7700f9dd129e786164d7c417412d86.setIcon(icon_a7debcb656fce34a9df9994a3a3e8759);
+            
+    
+            var marker_5bd23636371889779147449318b65935 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_bbc220ddb38ec63f497e01257ff0f06f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1ce153fe6fd66894c69666792b8f057 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cd09a8896fd654e000539c0198b32071 = $(`<div id="html_cd09a8896fd654e000539c0198b32071" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1975<br>Température : 0.0591666666666666 °C<br>Précipitations : 857.6 mm<br>CO₂ émis : 483.272 Mt<br>Catastrophes : nan</div>`)[0];
+                popup_b1ce153fe6fd66894c69666792b8f057.setContent(html_cd09a8896fd654e000539c0198b32071);
+            
+        
+
+        marker_5bd23636371889779147449318b65935.bindPopup(popup_b1ce153fe6fd66894c69666792b8f057)
+        ;
+
+        
+    
+    
+                marker_5bd23636371889779147449318b65935.setIcon(icon_bbc220ddb38ec63f497e01257ff0f06f);
+            
+    
+            var marker_f62f62aebf99252323ff3eecca71bca0 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_269294d0e6221effd3cd85496bf4c85e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ac3343e7964e838bfaf2ca3ba65b944 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0f0232487f922453b92d2feb2cde65a2 = $(`<div id="html_0f0232487f922453b92d2feb2cde65a2" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1976<br>Température : 0.3315833333333333 °C<br>Précipitations : 897.0 mm<br>CO₂ émis : 524.455 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_8ac3343e7964e838bfaf2ca3ba65b944.setContent(html_0f0232487f922453b92d2feb2cde65a2);
+            
+        
+
+        marker_f62f62aebf99252323ff3eecca71bca0.bindPopup(popup_8ac3343e7964e838bfaf2ca3ba65b944)
+        ;
+
+        
+    
+    
+                marker_f62f62aebf99252323ff3eecca71bca0.setIcon(icon_269294d0e6221effd3cd85496bf4c85e);
+            
+    
+            var marker_f457abc4084290544a0cd4c07b97207f = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_ca0991991c390db2e02b26a9985f6633 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6c5544baedfdc07d1ef35f9ceb5c9da = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bcb0589b0758f6fcf7e3e2a9484f7fc0 = $(`<div id="html_bcb0589b0758f6fcf7e3e2a9484f7fc0" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1977<br>Température : 0.1493333333333333 °C<br>Précipitations : 766.7 mm<br>CO₂ émis : 508.119 Mt<br>Catastrophes : 1.0</div>`)[0];
+                popup_d6c5544baedfdc07d1ef35f9ceb5c9da.setContent(html_bcb0589b0758f6fcf7e3e2a9484f7fc0);
+            
+        
+
+        marker_f457abc4084290544a0cd4c07b97207f.bindPopup(popup_d6c5544baedfdc07d1ef35f9ceb5c9da)
+        ;
+
+        
+    
+    
+                marker_f457abc4084290544a0cd4c07b97207f.setIcon(icon_ca0991991c390db2e02b26a9985f6633);
+            
+    
+            var marker_bf237e2d1da8920529a23c70eb926be5 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_4fca2eb12e585d6e53527c27a06995de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90e0b6762e9963699af1ccd4218c1185 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_744869749a7aa4dea7357542d0d1a9e7 = $(`<div id="html_744869749a7aa4dea7357542d0d1a9e7" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1978<br>Température : -0.2240833333333333 °C<br>Précipitations : 877.8 mm<br>CO₂ émis : 529.908 Mt<br>Catastrophes : 2.0</div>`)[0];
+                popup_90e0b6762e9963699af1ccd4218c1185.setContent(html_744869749a7aa4dea7357542d0d1a9e7);
+            
+        
+
+        marker_bf237e2d1da8920529a23c70eb926be5.bindPopup(popup_90e0b6762e9963699af1ccd4218c1185)
+        ;
+
+        
+    
+    
+                marker_bf237e2d1da8920529a23c70eb926be5.setIcon(icon_4fca2eb12e585d6e53527c27a06995de);
+            
+    
+            var marker_6f5aec8a4764ad51ca2391d807d8de60 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_744834dd4b2e9b216e5b5e1632f46de9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0989d4503cad94bac0de5b2e9b43b1c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b9a7c2825b707d8eb197424aeb043b69 = $(`<div id="html_b9a7c2825b707d8eb197424aeb043b69" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1979<br>Température : -0.0736666666666666 °C<br>Précipitations : 775.2 mm<br>CO₂ émis : 533.254 Mt<br>Catastrophes : 1.0</div>`)[0];
+                popup_e0989d4503cad94bac0de5b2e9b43b1c.setContent(html_b9a7c2825b707d8eb197424aeb043b69);
+            
+        
+
+        marker_6f5aec8a4764ad51ca2391d807d8de60.bindPopup(popup_e0989d4503cad94bac0de5b2e9b43b1c)
+        ;
+
+        
+    
+    
+                marker_6f5aec8a4764ad51ca2391d807d8de60.setIcon(icon_744834dd4b2e9b216e5b5e1632f46de9);
+            
+    
+            var marker_a30f03dcb72bf58f4f3b3b6d8bb00dbe = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_6adcedc8c1d700e8571197dc7bf3de70 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3bae6db896a2adb3e39a40bbf366cca8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7da7527086dca8db9c933a9166df03cd = $(`<div id="html_7da7527086dca8db9c933a9166df03cd" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1980<br>Température : -0.3354166666666667 °C<br>Précipitations : 847.5 mm<br>CO₂ émis : 512.218 Mt<br>Catastrophes : 2.0</div>`)[0];
+                popup_3bae6db896a2adb3e39a40bbf366cca8.setContent(html_7da7527086dca8db9c933a9166df03cd);
+            
+        
+
+        marker_a30f03dcb72bf58f4f3b3b6d8bb00dbe.bindPopup(popup_3bae6db896a2adb3e39a40bbf366cca8)
+        ;
+
+        
+    
+    
+                marker_a30f03dcb72bf58f4f3b3b6d8bb00dbe.setIcon(icon_6adcedc8c1d700e8571197dc7bf3de70);
+            
+    
+            var marker_758c161422fea17f82788b9803504844 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_571a1d63865fed8fbef9f0f7f18c7e93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4d5b24875e8714e701fe1c1c8141a6f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dcaa200c3e5d8b6ecce51f78a82d4961 = $(`<div id="html_dcaa200c3e5d8b6ecce51f78a82d4961" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1981<br>Température : 0.1898333333333333 °C<br>Précipitations : 791.2 mm<br>CO₂ émis : 460.491 Mt<br>Catastrophes : 2.0</div>`)[0];
+                popup_d4d5b24875e8714e701fe1c1c8141a6f.setContent(html_dcaa200c3e5d8b6ecce51f78a82d4961);
+            
+        
+
+        marker_758c161422fea17f82788b9803504844.bindPopup(popup_d4d5b24875e8714e701fe1c1c8141a6f)
+        ;
+
+        
+    
+    
+                marker_758c161422fea17f82788b9803504844.setIcon(icon_571a1d63865fed8fbef9f0f7f18c7e93);
+            
+    
+            var marker_6323f3526b46f8d313d9ec90a1a0c912 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_c4c9f20d156e19d51747bf85d7f5ccde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c96e0edc04a1c6c507a6f2c9fe7b3829 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_86fbf38c7773c39183b7a1722865911e = $(`<div id="html_86fbf38c7773c39183b7a1722865911e" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1982<br>Température : 0.7708333333333334 °C<br>Précipitations : 925.3 mm<br>CO₂ émis : 441.564 Mt<br>Catastrophes : 6.0</div>`)[0];
+                popup_c96e0edc04a1c6c507a6f2c9fe7b3829.setContent(html_86fbf38c7773c39183b7a1722865911e);
+            
+        
+
+        marker_6323f3526b46f8d313d9ec90a1a0c912.bindPopup(popup_c96e0edc04a1c6c507a6f2c9fe7b3829)
+        ;
+
+        
+    
+    
+                marker_6323f3526b46f8d313d9ec90a1a0c912.setIcon(icon_c4c9f20d156e19d51747bf85d7f5ccde);
+            
+    
+            var marker_4a9146cebea057f0fcc9845c79269082 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_a99de49f8ccd284b0f5d839c769bcea2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b83ed8a75a0b1fbdfbbca823063ebe21 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3e3094719a6141504e544eb98adbe044 = $(`<div id="html_3e3094719a6141504e544eb98adbe044" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1983<br>Température : 0.61875 °C<br>Précipitations : 912.6 mm<br>CO₂ émis : 424.455 Mt<br>Catastrophes : 9.0</div>`)[0];
+                popup_b83ed8a75a0b1fbdfbbca823063ebe21.setContent(html_3e3094719a6141504e544eb98adbe044);
+            
+        
+
+        marker_4a9146cebea057f0fcc9845c79269082.bindPopup(popup_b83ed8a75a0b1fbdfbbca823063ebe21)
+        ;
+
+        
+    
+    
+                marker_4a9146cebea057f0fcc9845c79269082.setIcon(icon_a99de49f8ccd284b0f5d839c769bcea2);
+            
+    
+            var marker_96cca3bfbaa6135cd90d503a9f277ea3 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_7e867aaec39940fb051ca62caf00f58b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8d150ec6a3ead166b4090ad95ef667ee = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b200f3a7d0914e44d6f3f2a7d514602c = $(`<div id="html_b200f3a7d0914e44d6f3f2a7d514602c" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1984<br>Température : -0.0444166666666666 °C<br>Précipitations : 855.2 mm<br>CO₂ émis : 413.169 Mt<br>Catastrophes : 5.0</div>`)[0];
+                popup_8d150ec6a3ead166b4090ad95ef667ee.setContent(html_b200f3a7d0914e44d6f3f2a7d514602c);
+            
+        
+
+        marker_96cca3bfbaa6135cd90d503a9f277ea3.bindPopup(popup_8d150ec6a3ead166b4090ad95ef667ee)
+        ;
+
+        
+    
+    
+                marker_96cca3bfbaa6135cd90d503a9f277ea3.setIcon(icon_7e867aaec39940fb051ca62caf00f58b);
+            
+    
+            var marker_cfeccf485dadf5e0311b97f972ecae8a = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_44fb4121ecb593132471d11bb9d5d6d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b26b777d248eec25d55c96223c8d52be = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce066d4bf29c9aeea801cb093cc0bab4 = $(`<div id="html_ce066d4bf29c9aeea801cb093cc0bab4" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1985<br>Température : -0.2868333333333333 °C<br>Précipitations : 907.0 mm<br>CO₂ émis : 406.314 Mt<br>Catastrophes : 7.0</div>`)[0];
+                popup_b26b777d248eec25d55c96223c8d52be.setContent(html_ce066d4bf29c9aeea801cb093cc0bab4);
+            
+        
+
+        marker_cfeccf485dadf5e0311b97f972ecae8a.bindPopup(popup_b26b777d248eec25d55c96223c8d52be)
+        ;
+
+        
+    
+    
+                marker_cfeccf485dadf5e0311b97f972ecae8a.setIcon(icon_44fb4121ecb593132471d11bb9d5d6d6);
+            
+    
+            var marker_05b08a3bb84f7940a1c98a903db2838c = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_83ce5034b7451e1d2d1ae4bb26c502c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9836960fd4c334608b04fc9620719e9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f1d112193b06ccf01cf65b7d0ee4e474 = $(`<div id="html_f1d112193b06ccf01cf65b7d0ee4e474" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1986<br>Température : -0.0462499999999999 °C<br>Précipitations : 872.7 mm<br>CO₂ émis : 391.448 Mt<br>Catastrophes : 1.0</div>`)[0];
+                popup_d9836960fd4c334608b04fc9620719e9.setContent(html_f1d112193b06ccf01cf65b7d0ee4e474);
+            
+        
+
+        marker_05b08a3bb84f7940a1c98a903db2838c.bindPopup(popup_d9836960fd4c334608b04fc9620719e9)
+        ;
+
+        
+    
+    
+                marker_05b08a3bb84f7940a1c98a903db2838c.setIcon(icon_83ce5034b7451e1d2d1ae4bb26c502c3);
+            
+    
+            var marker_fc5c715cf1069df41888e6e63bb3510a = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_e91b11b4ed2a2d46bdcc8aca32a36c34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_522cc5af07de771db9d2dda3a9a73f60 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a2986162f8c1c1e3ef02265d07455aeb = $(`<div id="html_a2986162f8c1c1e3ef02265d07455aeb" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1987<br>Température : 0.0640833333333333 °C<br>Précipitations : 878.8 mm<br>CO₂ émis : 388.852 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_522cc5af07de771db9d2dda3a9a73f60.setContent(html_a2986162f8c1c1e3ef02265d07455aeb);
+            
+        
+
+        marker_fc5c715cf1069df41888e6e63bb3510a.bindPopup(popup_522cc5af07de771db9d2dda3a9a73f60)
+        ;
+
+        
+    
+    
+                marker_fc5c715cf1069df41888e6e63bb3510a.setIcon(icon_e91b11b4ed2a2d46bdcc8aca32a36c34);
+            
+    
+            var marker_f27deaa6d3687dc93a1091ef2ab12def = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_2404e6aa5279ffb3958c1ac694567023 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_352b437bb4bbae62b8b0e65928e148e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5c44128422f1a54904c74d5f7c166b99 = $(`<div id="html_5c44128422f1a54904c74d5f7c166b99" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1988<br>Température : 0.6749166666666667 °C<br>Précipitations : 884.3 mm<br>CO₂ émis : 386.506 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_352b437bb4bbae62b8b0e65928e148e6.setContent(html_5c44128422f1a54904c74d5f7c166b99);
+            
+        
+
+        marker_f27deaa6d3687dc93a1091ef2ab12def.bindPopup(popup_352b437bb4bbae62b8b0e65928e148e6)
+        ;
+
+        
+    
+    
+                marker_f27deaa6d3687dc93a1091ef2ab12def.setIcon(icon_2404e6aa5279ffb3958c1ac694567023);
+            
+    
+            var marker_c53a45c21378c2df4e580f388a511d55 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_8ffe2550a676fcf41f1af4d01c1e292a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0b44e8a79908cd570343629a0037272 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5c63f0e76c8192562e372ff0048a6ef2 = $(`<div id="html_5c63f0e76c8192562e372ff0048a6ef2" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1989<br>Température : 1.0219166666666666 °C<br>Précipitations : 861.7 mm<br>CO₂ émis : 400.329 Mt<br>Catastrophes : 5.0</div>`)[0];
+                popup_b0b44e8a79908cd570343629a0037272.setContent(html_5c63f0e76c8192562e372ff0048a6ef2);
+            
+        
+
+        marker_c53a45c21378c2df4e580f388a511d55.bindPopup(popup_b0b44e8a79908cd570343629a0037272)
+        ;
+
+        
+    
+    
+                marker_c53a45c21378c2df4e580f388a511d55.setIcon(icon_8ffe2550a676fcf41f1af4d01c1e292a);
+            
+    
+            var marker_5561310ace583687596f7bdd6b04cc2c = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_48b3b907ec362cab8ddfc4eb0facac86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7f09b3807683bd0ad1605dd28df2e49 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0154e8b989ed84d6ad02d98be1147e3b = $(`<div id="html_0154e8b989ed84d6ad02d98be1147e3b" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1990<br>Température : 1.0881666666666667 °C<br>Précipitations : 825.0 mm<br>CO₂ émis : 393.717 Mt<br>Catastrophes : 11.0</div>`)[0];
+                popup_f7f09b3807683bd0ad1605dd28df2e49.setContent(html_0154e8b989ed84d6ad02d98be1147e3b);
+            
+        
+
+        marker_5561310ace583687596f7bdd6b04cc2c.bindPopup(popup_f7f09b3807683bd0ad1605dd28df2e49)
+        ;
+
+        
+    
+    
+                marker_5561310ace583687596f7bdd6b04cc2c.setIcon(icon_48b3b907ec362cab8ddfc4eb0facac86);
+            
+    
+            var marker_4edb5fae78ba8e581f153c8a068b8f74 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_732efd43cc6550d242a59d05baa32b78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_336789b3a591ffa650eccd8b7b4dc1fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a0063a0273f89c6a0fcaf42268246f36 = $(`<div id="html_a0063a0273f89c6a0fcaf42268246f36" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1991<br>Température : 0.2573333333333333 °C<br>Précipitations : 735.5 mm<br>CO₂ émis : 417.859 Mt<br>Catastrophes : 6.0</div>`)[0];
+                popup_336789b3a591ffa650eccd8b7b4dc1fe.setContent(html_a0063a0273f89c6a0fcaf42268246f36);
+            
+        
+
+        marker_4edb5fae78ba8e581f153c8a068b8f74.bindPopup(popup_336789b3a591ffa650eccd8b7b4dc1fe)
+        ;
+
+        
+    
+    
+                marker_4edb5fae78ba8e581f153c8a068b8f74.setIcon(icon_732efd43cc6550d242a59d05baa32b78);
+            
+    
+            var marker_3129f6ecfe7b589f9c74ebc4ac71559e = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_4e5222d921100659e2166402b098a2ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03cf43dc3864ce5ee5be49d2dadaa4cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4570e93d48acc5480ff8f9c6c3f763a0 = $(`<div id="html_4570e93d48acc5480ff8f9c6c3f763a0" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1992<br>Température : 0.5965833333333334 °C<br>Précipitations : 882.5 mm<br>CO₂ émis : 407.316 Mt<br>Catastrophes : 6.0</div>`)[0];
+                popup_03cf43dc3864ce5ee5be49d2dadaa4cb.setContent(html_4570e93d48acc5480ff8f9c6c3f763a0);
+            
+        
+
+        marker_3129f6ecfe7b589f9c74ebc4ac71559e.bindPopup(popup_03cf43dc3864ce5ee5be49d2dadaa4cb)
+        ;
+
+        
+    
+    
+                marker_3129f6ecfe7b589f9c74ebc4ac71559e.setIcon(icon_4e5222d921100659e2166402b098a2ad);
+            
+    
+            var marker_3c475db718bfe0a14648f877853c8ba0 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_a2e35a7a4f9dcf0792d343d338cb39cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35f67d4572a35dd3771119128d7af99c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bf9fedf4775c16e99cf262e67194795a = $(`<div id="html_bf9fedf4775c16e99cf262e67194795a" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1993<br>Température : 0.2650833333333333 °C<br>Précipitations : 802.1 mm<br>CO₂ émis : 387.699 Mt<br>Catastrophes : 5.0</div>`)[0];
+                popup_35f67d4572a35dd3771119128d7af99c.setContent(html_bf9fedf4775c16e99cf262e67194795a);
+            
+        
+
+        marker_3c475db718bfe0a14648f877853c8ba0.bindPopup(popup_35f67d4572a35dd3771119128d7af99c)
+        ;
+
+        
+    
+    
+                marker_3c475db718bfe0a14648f877853c8ba0.setIcon(icon_a2e35a7a4f9dcf0792d343d338cb39cd);
+            
+    
+            var marker_3df6490f87f783e78f2fa3a0fbc9c16d = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_b3d277e38e105a9501ad301f848f4f67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a1a06652739d0d8f0ef876dcabb5fe5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_19a463fb2817b0c9f526d96cf80e601b = $(`<div id="html_19a463fb2817b0c9f526d96cf80e601b" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1994<br>Température : 1.2479166666666666 °C<br>Précipitations : 867.3 mm<br>CO₂ émis : 380.793 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_7a1a06652739d0d8f0ef876dcabb5fe5.setContent(html_19a463fb2817b0c9f526d96cf80e601b);
+            
+        
+
+        marker_3df6490f87f783e78f2fa3a0fbc9c16d.bindPopup(popup_7a1a06652739d0d8f0ef876dcabb5fe5)
+        ;
+
+        
+    
+    
+                marker_3df6490f87f783e78f2fa3a0fbc9c16d.setIcon(icon_b3d277e38e105a9501ad301f848f4f67);
+            
+    
+            var marker_a560cc47257a4d384e9b37c9b77b0ea5 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_18c855def9f9776da0a023ff2f638df9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64dc4199f6ade0b18bf421153e49caf8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ec365e745121ea24828856aa76b3fa2 = $(`<div id="html_3ec365e745121ea24828856aa76b3fa2" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1995<br>Température : 0.9770833333333332 °C<br>Précipitations : 812.9 mm<br>CO₂ émis : 385.81 Mt<br>Catastrophes : 6.0</div>`)[0];
+                popup_64dc4199f6ade0b18bf421153e49caf8.setContent(html_3ec365e745121ea24828856aa76b3fa2);
+            
+        
+
+        marker_a560cc47257a4d384e9b37c9b77b0ea5.bindPopup(popup_64dc4199f6ade0b18bf421153e49caf8)
+        ;
+
+        
+    
+    
+                marker_a560cc47257a4d384e9b37c9b77b0ea5.setIcon(icon_18c855def9f9776da0a023ff2f638df9);
+            
+    
+            var marker_b030a14d28a293231bde8b2a8f455f16 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_d1296ca08792b8c9df0e43b3abf12383 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86c96c47d365e657a6ad0549cc058b65 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe3945a5cb16e076be8efe894bdc0ca1 = $(`<div id="html_fe3945a5cb16e076be8efe894bdc0ca1" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1996<br>Température : 0.0689166666666666 °C<br>Précipitations : 855.5 mm<br>CO₂ émis : 402.156 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_86c96c47d365e657a6ad0549cc058b65.setContent(html_fe3945a5cb16e076be8efe894bdc0ca1);
+            
+        
+
+        marker_b030a14d28a293231bde8b2a8f455f16.bindPopup(popup_86c96c47d365e657a6ad0549cc058b65)
+        ;
+
+        
+    
+    
+                marker_b030a14d28a293231bde8b2a8f455f16.setIcon(icon_d1296ca08792b8c9df0e43b3abf12383);
+            
+    
+            var marker_22ce1bf8aa6b2b39d6a2078dc75aec43 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_32f5f8076bd970301f79a5d595832b6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4dfa42064ac20057fccb411fa71f4e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0b6e7182525b43471b5d4d154cee7e9d = $(`<div id="html_0b6e7182525b43471b5d4d154cee7e9d" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1997<br>Température : 1.15025 °C<br>Précipitations : 887.0 mm<br>CO₂ émis : 394.845 Mt<br>Catastrophes : 8.0</div>`)[0];
+                popup_b4dfa42064ac20057fccb411fa71f4e6.setContent(html_0b6e7182525b43471b5d4d154cee7e9d);
+            
+        
+
+        marker_22ce1bf8aa6b2b39d6a2078dc75aec43.bindPopup(popup_b4dfa42064ac20057fccb411fa71f4e6)
+        ;
+
+        
+    
+    
+                marker_22ce1bf8aa6b2b39d6a2078dc75aec43.setIcon(icon_32f5f8076bd970301f79a5d595832b6e);
+            
+    
+            var marker_00785c964942a59a09b87c11a79eda5e = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_1077ef4a5ff595d0f25451f29474b1f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_59bde39571995e34eba82c9005b4f22f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ee1b570075a9e3c4afa0999c1a8ce16 = $(`<div id="html_6ee1b570075a9e3c4afa0999c1a8ce16" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1998<br>Température : 0.79275 °C<br>Précipitations : 921.0 mm<br>CO₂ émis : 413.259 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_59bde39571995e34eba82c9005b4f22f.setContent(html_6ee1b570075a9e3c4afa0999c1a8ce16);
+            
+        
+
+        marker_00785c964942a59a09b87c11a79eda5e.bindPopup(popup_59bde39571995e34eba82c9005b4f22f)
+        ;
+
+        
+    
+    
+                marker_00785c964942a59a09b87c11a79eda5e.setIcon(icon_1077ef4a5ff595d0f25451f29474b1f5);
+            
+    
+            var marker_089788959c93cdbbc42bd4821f81caa7 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_2ce92299313d661b70269da5ed3ac958 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad97dbd540ec28da85f5b96cc4022a46 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f6eac4336c3b9c2ff0f818396fe8100e = $(`<div id="html_f6eac4336c3b9c2ff0f818396fe8100e" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 1999<br>Température : 1.01725 °C<br>Précipitations : 829.6 mm<br>CO₂ émis : 412.021 Mt<br>Catastrophes : 12.0</div>`)[0];
+                popup_ad97dbd540ec28da85f5b96cc4022a46.setContent(html_f6eac4336c3b9c2ff0f818396fe8100e);
+            
+        
+
+        marker_089788959c93cdbbc42bd4821f81caa7.bindPopup(popup_ad97dbd540ec28da85f5b96cc4022a46)
+        ;
+
+        
+    
+    
+                marker_089788959c93cdbbc42bd4821f81caa7.setIcon(icon_2ce92299313d661b70269da5ed3ac958);
+            
+    
+            var marker_32a3220d620eb28ad49b1071338d5ec8 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_0c5d4ec3886695c31bc3d1eb60a3d88e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea5e7b826ceaca371d8b7b41aa736df8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d5e9a893d848c3150d3b19b4a93fc514 = $(`<div id="html_d5e9a893d848c3150d3b19b4a93fc514" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2000<br>Température : 1.0865 °C<br>Précipitations : 882.5 mm<br>CO₂ émis : 406.139 Mt<br>Catastrophes : 8.0</div>`)[0];
+                popup_ea5e7b826ceaca371d8b7b41aa736df8.setContent(html_d5e9a893d848c3150d3b19b4a93fc514);
+            
+        
+
+        marker_32a3220d620eb28ad49b1071338d5ec8.bindPopup(popup_ea5e7b826ceaca371d8b7b41aa736df8)
+        ;
+
+        
+    
+    
+                marker_32a3220d620eb28ad49b1071338d5ec8.setIcon(icon_0c5d4ec3886695c31bc3d1eb60a3d88e);
+            
+    
+            var marker_29f5e42c7560c1e3ccedfab582eff73e = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_ffd4f301100a94ee584cc9cd001ff9af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77056ecb709ecb1f24691afd0899718a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_51d777be73085b45896bdeb194484c9f = $(`<div id="html_51d777be73085b45896bdeb194484c9f" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2001<br>Température : 0.8048333333333333 °C<br>Précipitations : 773.7 mm<br>CO₂ émis : 410.445 Mt<br>Catastrophes : 9.0</div>`)[0];
+                popup_77056ecb709ecb1f24691afd0899718a.setContent(html_51d777be73085b45896bdeb194484c9f);
+            
+        
+
+        marker_29f5e42c7560c1e3ccedfab582eff73e.bindPopup(popup_77056ecb709ecb1f24691afd0899718a)
+        ;
+
+        
+    
+    
+                marker_29f5e42c7560c1e3ccedfab582eff73e.setIcon(icon_ffd4f301100a94ee584cc9cd001ff9af);
+            
+    
+            var marker_1f9bb2527f575c454d75d26a82aeb2ea = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_f3169156caccaf1cdb827e86154a21e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a11bc66b68a42a37d5caef3c70fc5314 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2408481632b772c0a0883e5f17b0b6bd = $(`<div id="html_2408481632b772c0a0883e5f17b0b6bd" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2002<br>Température : 1.1703333333333334 °C<br>Précipitations : 834.7 mm<br>CO₂ émis : 405.947 Mt<br>Catastrophes : 7.0</div>`)[0];
+                popup_a11bc66b68a42a37d5caef3c70fc5314.setContent(html_2408481632b772c0a0883e5f17b0b6bd);
+            
+        
+
+        marker_1f9bb2527f575c454d75d26a82aeb2ea.bindPopup(popup_a11bc66b68a42a37d5caef3c70fc5314)
+        ;
+
+        
+    
+    
+                marker_1f9bb2527f575c454d75d26a82aeb2ea.setIcon(icon_f3169156caccaf1cdb827e86154a21e9);
+            
+    
+            var marker_58f03657190df2e106be1fb8962367ff = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_7d10d7ba359af6a3c5631ae973e6480f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35447f7f4017593d1614cb65d8263c60 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_840600f6bf3f8cc5ffdad452435bf924 = $(`<div id="html_840600f6bf3f8cc5ffdad452435bf924" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2003<br>Température : 1.4361666666666666 °C<br>Précipitations : 782.8 mm<br>CO₂ émis : 411.965 Mt<br>Catastrophes : 9.0</div>`)[0];
+                popup_35447f7f4017593d1614cb65d8263c60.setContent(html_840600f6bf3f8cc5ffdad452435bf924);
+            
+        
+
+        marker_58f03657190df2e106be1fb8962367ff.bindPopup(popup_35447f7f4017593d1614cb65d8263c60)
+        ;
+
+        
+    
+    
+                marker_58f03657190df2e106be1fb8962367ff.setIcon(icon_7d10d7ba359af6a3c5631ae973e6480f);
+            
+    
+            var marker_6e7c365429204d7beb1f3d40caacd802 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_486a1b7517f340046b1e2f836cdfef20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1088c132ad09dd2d27af7f63459f361 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3805f221a1530c913c3ed94acb784bc5 = $(`<div id="html_3805f221a1530c913c3ed94acb784bc5" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2004<br>Température : 0.7624166666666667 °C<br>Précipitations : 800.2 mm<br>CO₂ émis : 413.379 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_d1088c132ad09dd2d27af7f63459f361.setContent(html_3805f221a1530c913c3ed94acb784bc5);
+            
+        
+
+        marker_6e7c365429204d7beb1f3d40caacd802.bindPopup(popup_d1088c132ad09dd2d27af7f63459f361)
+        ;
+
+        
+    
+    
+                marker_6e7c365429204d7beb1f3d40caacd802.setIcon(icon_486a1b7517f340046b1e2f836cdfef20);
+            
+    
+            var marker_ab8353cc5ec86355170bbf7ce15ea3c1 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_0b2502d2179801ad1c50115cc263563d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_edabecec384e1a84da27dc674232f76a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d086e3c4330375d15f9bf8c80c2a951e = $(`<div id="html_d086e3c4330375d15f9bf8c80c2a951e" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2005<br>Température : 0.7712499999999999 °C<br>Précipitations : 909.2 mm<br>CO₂ émis : 415.795 Mt<br>Catastrophes : 8.0</div>`)[0];
+                popup_edabecec384e1a84da27dc674232f76a.setContent(html_d086e3c4330375d15f9bf8c80c2a951e);
+            
+        
+
+        marker_ab8353cc5ec86355170bbf7ce15ea3c1.bindPopup(popup_edabecec384e1a84da27dc674232f76a)
+        ;
+
+        
+    
+    
+                marker_ab8353cc5ec86355170bbf7ce15ea3c1.setIcon(icon_0b2502d2179801ad1c50115cc263563d);
+            
+    
+            var marker_9414fc337e2395087613084fa09535ed = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_8fe63fe2925d2130214af34975062a08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0991e4472a9adaee8dd9ce4d85576770 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_57bb7b8fee20936fbfc51d44612f75c8 = $(`<div id="html_57bb7b8fee20936fbfc51d44612f75c8" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2006<br>Température : 1.27925 °C<br>Précipitations : 723.6 mm<br>CO₂ émis : 406.157 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_0991e4472a9adaee8dd9ce4d85576770.setContent(html_57bb7b8fee20936fbfc51d44612f75c8);
+            
+        
+
+        marker_9414fc337e2395087613084fa09535ed.bindPopup(popup_0991e4472a9adaee8dd9ce4d85576770)
+        ;
+
+        
+    
+    
+                marker_9414fc337e2395087613084fa09535ed.setIcon(icon_8fe63fe2925d2130214af34975062a08);
+            
+    
+            var marker_71582f899ba050546a35f2b16168d8eb = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_d6f29bb05342424e92cc9d9c093d807c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbc9cb73ea1581e78050f6e78a87c60a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3e176eebc870f287b7cbacd2db3e910c = $(`<div id="html_3e176eebc870f287b7cbacd2db3e910c" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2007<br>Température : 1.0326666666666666 °C<br>Précipitations : 904.6 mm<br>CO₂ émis : 396.01 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_dbc9cb73ea1581e78050f6e78a87c60a.setContent(html_3e176eebc870f287b7cbacd2db3e910c);
+            
+        
+
+        marker_71582f899ba050546a35f2b16168d8eb.bindPopup(popup_dbc9cb73ea1581e78050f6e78a87c60a)
+        ;
+
+        
+    
+    
+                marker_71582f899ba050546a35f2b16168d8eb.setIcon(icon_d6f29bb05342424e92cc9d9c093d807c);
+            
+    
+            var marker_0f841c1b6b5726c1fe7e4c98331e76a2 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_18255f4ea8a9adff5d930ee4e2b332ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52b33f7d9e61e9210e4c78776050ad1f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ed8ee3ce17857cc058fb2d19a1683d4 = $(`<div id="html_3ed8ee3ce17857cc058fb2d19a1683d4" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2008<br>Température : 0.7245833333333334 °C<br>Précipitations : 897.5 mm<br>CO₂ émis : 389.094 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_52b33f7d9e61e9210e4c78776050ad1f.setContent(html_3ed8ee3ce17857cc058fb2d19a1683d4);
+            
+        
+
+        marker_0f841c1b6b5726c1fe7e4c98331e76a2.bindPopup(popup_52b33f7d9e61e9210e4c78776050ad1f)
+        ;
+
+        
+    
+    
+                marker_0f841c1b6b5726c1fe7e4c98331e76a2.setIcon(icon_18255f4ea8a9adff5d930ee4e2b332ee);
+            
+    
+            var marker_a3145031a4abd3c05b1706a484373e08 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_c28fae29a93831574e348c9bb5d8157a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_141da85d592b6c55a2a2bbe31978a5d4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_75c9a6d3f83a6269da6c53c8e2814133 = $(`<div id="html_75c9a6d3f83a6269da6c53c8e2814133" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2009<br>Température : 1.0730833333333332 °C<br>Précipitations : 845.6 mm<br>CO₂ émis : 370.876 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_141da85d592b6c55a2a2bbe31978a5d4.setContent(html_75c9a6d3f83a6269da6c53c8e2814133);
+            
+        
+
+        marker_a3145031a4abd3c05b1706a484373e08.bindPopup(popup_141da85d592b6c55a2a2bbe31978a5d4)
+        ;
+
+        
+    
+    
+                marker_a3145031a4abd3c05b1706a484373e08.setIcon(icon_c28fae29a93831574e348c9bb5d8157a);
+            
+    
+            var marker_235413af5042260848219d614de6892a = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_5aa3c97270ac81b6a8b0d7d463374542 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67a177f35d6852b387753ddb867b0a3e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c815c880674f9938215b73f92b77fa62 = $(`<div id="html_c815c880674f9938215b73f92b77fa62" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2010<br>Température : 0.2244166666666666 °C<br>Précipitations : 920.4 mm<br>CO₂ émis : 376.457 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_67a177f35d6852b387753ddb867b0a3e.setContent(html_c815c880674f9938215b73f92b77fa62);
+            
+        
+
+        marker_235413af5042260848219d614de6892a.bindPopup(popup_67a177f35d6852b387753ddb867b0a3e)
+        ;
+
+        
+    
+    
+                marker_235413af5042260848219d614de6892a.setIcon(icon_5aa3c97270ac81b6a8b0d7d463374542);
+            
+    
+            var marker_3f3ab79c80ef118042d6a727d667879b = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_2f3321b58b6dd77f3d8fad38c49047f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc857b5c0a6fa72085a4d2a825609edd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e22842f28439aca891665f599ab0b878 = $(`<div id="html_e22842f28439aca891665f599ab0b878" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2011<br>Température : 1.6144166666666668 °C<br>Précipitations : 894.4 mm<br>CO₂ émis : 354.375 Mt<br>Catastrophes : 2.0</div>`)[0];
+                popup_fc857b5c0a6fa72085a4d2a825609edd.setContent(html_e22842f28439aca891665f599ab0b878);
+            
+        
+
+        marker_3f3ab79c80ef118042d6a727d667879b.bindPopup(popup_fc857b5c0a6fa72085a4d2a825609edd)
+        ;
+
+        
+    
+    
+                marker_3f3ab79c80ef118042d6a727d667879b.setIcon(icon_2f3321b58b6dd77f3d8fad38c49047f6);
+            
+    
+            var marker_9d833de47791c91d8dbf8dc96b11d3e8 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_cc04afd215cc776c10e3120f41ea3b61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a56e615ba83dbfff548ddb8a197b90c6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d53436ec009ab5f2fb6f40d2b428ae2f = $(`<div id="html_d53436ec009ab5f2fb6f40d2b428ae2f" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2012<br>Température : 0.9090833333333334 °C<br>Précipitations : 952.5 mm<br>CO₂ émis : 356.439 Mt<br>Catastrophes : 1.0</div>`)[0];
+                popup_a56e615ba83dbfff548ddb8a197b90c6.setContent(html_d53436ec009ab5f2fb6f40d2b428ae2f);
+            
+        
+
+        marker_9d833de47791c91d8dbf8dc96b11d3e8.bindPopup(popup_a56e615ba83dbfff548ddb8a197b90c6)
+        ;
+
+        
+    
+    
+                marker_9d833de47791c91d8dbf8dc96b11d3e8.setIcon(icon_cc04afd215cc776c10e3120f41ea3b61);
+            
+    
+            var marker_692d91e4af16fc82631fe5e585c22853 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_d9bd9ecc479db34cfd74913025816753 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15e38b68dfabbc0826de5ea32467f115 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5ac99af59018cbddb0053f50901b9a48 = $(`<div id="html_5ac99af59018cbddb0053f50901b9a48" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2013<br>Température : 0.51025 °C<br>Précipitations : 954.8 mm<br>CO₂ émis : 358.703 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_15e38b68dfabbc0826de5ea32467f115.setContent(html_5ac99af59018cbddb0053f50901b9a48);
+            
+        
+
+        marker_692d91e4af16fc82631fe5e585c22853.bindPopup(popup_15e38b68dfabbc0826de5ea32467f115)
+        ;
+
+        
+    
+    
+                marker_692d91e4af16fc82631fe5e585c22853.setIcon(icon_d9bd9ecc479db34cfd74913025816753);
+            
+    
+            var marker_1362b22326f8af7c5109cedf18355ee5 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_8337cad6a592e55e6d1d4f944c2eb637 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50ca4057f559c25f1b8d22e3555aa6e5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c03740eb57b057547df9aa5a926892f = $(`<div id="html_3c03740eb57b057547df9aa5a926892f" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2014<br>Température : 1.5265000000000002 °C<br>Précipitations : 878.8 mm<br>CO₂ émis : 326.842 Mt<br>Catastrophes : 7.0</div>`)[0];
+                popup_50ca4057f559c25f1b8d22e3555aa6e5.setContent(html_3c03740eb57b057547df9aa5a926892f);
+            
+        
+
+        marker_1362b22326f8af7c5109cedf18355ee5.bindPopup(popup_50ca4057f559c25f1b8d22e3555aa6e5)
+        ;
+
+        
+    
+    
+                marker_1362b22326f8af7c5109cedf18355ee5.setIcon(icon_8337cad6a592e55e6d1d4f944c2eb637);
+            
+    
+            var marker_7331306903d7f562f4b4856f06e3aa4e = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_11ae7ffaee1909ffcee1bece70616b2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0289e1072907a3bd65b1e2eed52be575 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_854c5c20d0aa7f8d23d7d3bf1ee593b3 = $(`<div id="html_854c5c20d0aa7f8d23d7d3bf1ee593b3" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2015<br>Température : 1.4103333333333332 °C<br>Précipitations : 783.7 mm<br>CO₂ émis : 331.49 Mt<br>Catastrophes : 5.0</div>`)[0];
+                popup_0289e1072907a3bd65b1e2eed52be575.setContent(html_854c5c20d0aa7f8d23d7d3bf1ee593b3);
+            
+        
+
+        marker_7331306903d7f562f4b4856f06e3aa4e.bindPopup(popup_0289e1072907a3bd65b1e2eed52be575)
+        ;
+
+        
+    
+    
+                marker_7331306903d7f562f4b4856f06e3aa4e.setIcon(icon_11ae7ffaee1909ffcee1bece70616b2a);
+            
+    
+            var marker_a72f1f75e5ac1b1c04d5d6e0ea0c6835 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_8f6706bf1800a8fe738412a0f7301061 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf5a5b9fd682723597bd336b7268a51b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b48b084c47d2fd86180ff014f6a681ad = $(`<div id="html_b48b084c47d2fd86180ff014f6a681ad" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2016<br>Température : 1.1181666666666663 °C<br>Précipitations : 812.5 mm<br>CO₂ émis : 334.2 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_cf5a5b9fd682723597bd336b7268a51b.setContent(html_b48b084c47d2fd86180ff014f6a681ad);
+            
+        
+
+        marker_a72f1f75e5ac1b1c04d5d6e0ea0c6835.bindPopup(popup_cf5a5b9fd682723597bd336b7268a51b)
+        ;
+
+        
+    
+    
+                marker_a72f1f75e5ac1b1c04d5d6e0ea0c6835.setIcon(icon_8f6706bf1800a8fe738412a0f7301061);
+            
+    
+            var marker_1ae26d9d64770f2ed7ae1482f39a8533 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_ae20ea56eb12b7e0bf26bed5363b9448 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46addf7efe2eed274ad0eab4b43078c6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_883dd60510a05e47721ae87cd9d6fea3 = $(`<div id="html_883dd60510a05e47721ae87cd9d6fea3" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2017<br>Température : 1.2925 °C<br>Précipitations : 924.0 mm<br>CO₂ émis : 337.101 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_46addf7efe2eed274ad0eab4b43078c6.setContent(html_883dd60510a05e47721ae87cd9d6fea3);
+            
+        
+
+        marker_1ae26d9d64770f2ed7ae1482f39a8533.bindPopup(popup_46addf7efe2eed274ad0eab4b43078c6)
+        ;
+
+        
+    
+    
+                marker_1ae26d9d64770f2ed7ae1482f39a8533.setIcon(icon_ae20ea56eb12b7e0bf26bed5363b9448);
+            
+    
+            var marker_d2d313e00e37aedb52722c9d86ced18b = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_11066189a895b92cead4a8127e87d8f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec0ababcbb9f92fb6622384c6ed2cc45 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7c381737d4bd24498d46a49b69e7e49e = $(`<div id="html_7c381737d4bd24498d46a49b69e7e49e" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2018<br>Température : 1.6919166666666667 °C<br>Précipitations : 846.5 mm<br>CO₂ émis : 321.94 Mt<br>Catastrophes : 7.0</div>`)[0];
+                popup_ec0ababcbb9f92fb6622384c6ed2cc45.setContent(html_7c381737d4bd24498d46a49b69e7e49e);
+            
+        
+
+        marker_d2d313e00e37aedb52722c9d86ced18b.bindPopup(popup_ec0ababcbb9f92fb6622384c6ed2cc45)
+        ;
+
+        
+    
+    
+                marker_d2d313e00e37aedb52722c9d86ced18b.setIcon(icon_11066189a895b92cead4a8127e87d8f4);
+            
+    
+            var marker_02837e69972618b1e5f433fa99b22b5c = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_338d4b64b768f8c8941437b406f0ccf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4e9c10b5074d3acaa245d63594843aa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f6390b26c73b3d35eb2ad1090db0bc68 = $(`<div id="html_f6390b26c73b3d35eb2ad1090db0bc68" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2019<br>Température : 1.6226666666666667 °C<br>Précipitations : 909.3 mm<br>CO₂ émis : 315.015 Mt<br>Catastrophes : 10.0</div>`)[0];
+                popup_b4e9c10b5074d3acaa245d63594843aa.setContent(html_f6390b26c73b3d35eb2ad1090db0bc68);
+            
+        
+
+        marker_02837e69972618b1e5f433fa99b22b5c.bindPopup(popup_b4e9c10b5074d3acaa245d63594843aa)
+        ;
+
+        
+    
+    
+                marker_02837e69972618b1e5f433fa99b22b5c.setIcon(icon_338d4b64b768f8c8941437b406f0ccf6);
+            
+    
+            var marker_de3414e619ba68aca8c3f219239ebc73 = L.marker(
+                [46.603354, 1.888334],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_2ec0fa26807032362bc726ea4c46cb87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_208636251fb62ca9eed808c9962f65ef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e7b153675038eda24ef1dc5db9eac6d4 = $(`<div id="html_e7b153675038eda24ef1dc5db9eac6d4" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> France<br><b>Année :</b> 2020<br>Température : 1.8945833333333333 °C<br>Précipitations : 812.1 mm<br>CO₂ émis : 280.49 Mt<br>Catastrophes : 7.0</div>`)[0];
+                popup_208636251fb62ca9eed808c9962f65ef.setContent(html_e7b153675038eda24ef1dc5db9eac6d4);
+            
+        
+
+        marker_de3414e619ba68aca8c3f219239ebc73.bindPopup(popup_208636251fb62ca9eed808c9962f65ef)
+        ;
+
+        
+    
+    
+                marker_de3414e619ba68aca8c3f219239ebc73.setIcon(icon_2ec0fa26807032362bc726ea4c46cb87);
+            
+    
+            var marker_fc8112b992a345a7a08e1a24b27b41d6 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_da1e7933c51abcf9cb04ad50703d63cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae353e25899c1d7b2f1fe5676e530414 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_451771aef5db9b05b7449ff56d047e5e = $(`<div id="html_451771aef5db9b05b7449ff56d047e5e" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1970<br>Température : -0.03975 °C<br>Précipitations : 922.6 mm<br>CO₂ émis : 181.723 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_ae353e25899c1d7b2f1fe5676e530414.setContent(html_451771aef5db9b05b7449ff56d047e5e);
+            
+        
+
+        marker_fc8112b992a345a7a08e1a24b27b41d6.bindPopup(popup_ae353e25899c1d7b2f1fe5676e530414)
+        ;
+
+        
+    
+    
+                marker_fc8112b992a345a7a08e1a24b27b41d6.setIcon(icon_da1e7933c51abcf9cb04ad50703d63cc);
+            
+    
+            var marker_0aec16526e037d2c2cea1446cfe7f379 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_cc21128ef6871b34836d30a7129051fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc332acff019696ef972bf0d9a80c37d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6e88fa8a123b80fb3c3b96beecd7392d = $(`<div id="html_6e88fa8a123b80fb3c3b96beecd7392d" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1971<br>Température : -0.53625 °C<br>Précipitations : 1094.2 mm<br>CO₂ émis : 191.964 Mt<br>Catastrophes : 5.0</div>`)[0];
+                popup_fc332acff019696ef972bf0d9a80c37d.setContent(html_6e88fa8a123b80fb3c3b96beecd7392d);
+            
+        
+
+        marker_0aec16526e037d2c2cea1446cfe7f379.bindPopup(popup_fc332acff019696ef972bf0d9a80c37d)
+        ;
+
+        
+    
+    
+                marker_0aec16526e037d2c2cea1446cfe7f379.setIcon(icon_cc21128ef6871b34836d30a7129051fe);
+            
+    
+            var marker_23b64908cdbe86e000dc389745325f23 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_b4e79b4fbfe8c44520a15e45e81f32e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d24b383d5f493f2492fad06c2ea8714f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_52b8d64f6e8cfe5b34552e01d24c30be = $(`<div id="html_52b8d64f6e8cfe5b34552e01d24c30be" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1972<br>Température : 0.105 °C<br>Précipitations : 1073.4 mm<br>CO₂ émis : 203.036 Mt<br>Catastrophes : 4.0</div>`)[0];
+                popup_d24b383d5f493f2492fad06c2ea8714f.setContent(html_52b8d64f6e8cfe5b34552e01d24c30be);
+            
+        
+
+        marker_23b64908cdbe86e000dc389745325f23.bindPopup(popup_d24b383d5f493f2492fad06c2ea8714f)
+        ;
+
+        
+    
+    
+                marker_23b64908cdbe86e000dc389745325f23.setIcon(icon_b4e79b4fbfe8c44520a15e45e81f32e5);
+            
+    
+            var marker_74be8c33e4a33ced40be0a5980a2517a = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_80e2d22e9bfdc0b2b9888ff5fa535573 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2feadfa325971e20b7628c3031755a95 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1e2812bfa264e49feac079aa3b576419 = $(`<div id="html_1e2812bfa264e49feac079aa3b576419" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1973<br>Température : 0.2085 °C<br>Précipitations : 1070.8 mm<br>CO₂ émis : 209.095 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_2feadfa325971e20b7628c3031755a95.setContent(html_1e2812bfa264e49feac079aa3b576419);
+            
+        
+
+        marker_74be8c33e4a33ced40be0a5980a2517a.bindPopup(popup_2feadfa325971e20b7628c3031755a95)
+        ;
+
+        
+    
+    
+                marker_74be8c33e4a33ced40be0a5980a2517a.setIcon(icon_80e2d22e9bfdc0b2b9888ff5fa535573);
+            
+    
+            var marker_241aad277f07cfcd1ebead6b9697a3fc = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_5729f26b0d867605f3e22780835c502c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e2d5a7093b52e9af15a53c62818d0dd2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8f04ba2e89a21f8de8a4005fdfdf3683 = $(`<div id="html_8f04ba2e89a21f8de8a4005fdfdf3683" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1974<br>Température : -0.0264999999999999 °C<br>Précipitations : 831.1 mm<br>CO₂ émis : 215.853 Mt<br>Catastrophes : 3.0</div>`)[0];
+                popup_e2d5a7093b52e9af15a53c62818d0dd2.setContent(html_8f04ba2e89a21f8de8a4005fdfdf3683);
+            
+        
+
+        marker_241aad277f07cfcd1ebead6b9697a3fc.bindPopup(popup_e2d5a7093b52e9af15a53c62818d0dd2)
+        ;
+
+        
+    
+    
+                marker_241aad277f07cfcd1ebead6b9697a3fc.setIcon(icon_5729f26b0d867605f3e22780835c502c);
+            
+    
+            var marker_5a450aba945a79b6d18cd65a848d528a = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_dbbdb0cbf2b7878cb19ca21d22e249e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83c55b1ffc7d1e945b40ec8a9ca29a03 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b55e1541b6d5857508aa3308f7c6e914 = $(`<div id="html_b55e1541b6d5857508aa3308f7c6e914" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1975<br>Température : -0.30975 °C<br>Précipitations : 995.3 mm<br>CO₂ émis : 234.209 Mt<br>Catastrophes : 9.0</div>`)[0];
+                popup_83c55b1ffc7d1e945b40ec8a9ca29a03.setContent(html_b55e1541b6d5857508aa3308f7c6e914);
+            
+        
+
+        marker_5a450aba945a79b6d18cd65a848d528a.bindPopup(popup_83c55b1ffc7d1e945b40ec8a9ca29a03)
+        ;
+
+        
+    
+    
+                marker_5a450aba945a79b6d18cd65a848d528a.setIcon(icon_dbbdb0cbf2b7878cb19ca21d22e249e2);
+            
+    
+            var marker_78b12d825b59de8e49bdcc9cd2191efd = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_f6a786cd941349adac0073c930f8fcbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d35262d97d7cd856508d64cbeb17936 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d65605ce87368787d1b42ed025f855c = $(`<div id="html_4d65605ce87368787d1b42ed025f855c" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1976<br>Température : 0.05475 °C<br>Précipitations : 1169.6 mm<br>CO₂ émis : 244.749 Mt<br>Catastrophes : 7.0</div>`)[0];
+                popup_4d35262d97d7cd856508d64cbeb17936.setContent(html_4d65605ce87368787d1b42ed025f855c);
+            
+        
+
+        marker_78b12d825b59de8e49bdcc9cd2191efd.bindPopup(popup_4d35262d97d7cd856508d64cbeb17936)
+        ;
+
+        
+    
+    
+                marker_78b12d825b59de8e49bdcc9cd2191efd.setIcon(icon_f6a786cd941349adac0073c930f8fcbd);
+            
+    
+            var marker_dbb58ca152c61479ca6e0e596c6ea74e = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_1b4fea534d1547a40bb216e2ffa05563 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39a5d8af06014cc8fe1920ef81cf6de0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b1fc6e2ae3d1321313639519cd38fa61 = $(`<div id="html_b1fc6e2ae3d1321313639519cd38fa61" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1977<br>Température : 0.1186666666666666 °C<br>Précipitations : 1109.6 mm<br>CO₂ émis : 258.962 Mt<br>Catastrophes : 5.0</div>`)[0];
+                popup_39a5d8af06014cc8fe1920ef81cf6de0.setContent(html_b1fc6e2ae3d1321313639519cd38fa61);
+            
+        
+
+        marker_dbb58ca152c61479ca6e0e596c6ea74e.bindPopup(popup_39a5d8af06014cc8fe1920ef81cf6de0)
+        ;
+
+        
+    
+    
+                marker_dbb58ca152c61479ca6e0e596c6ea74e.setIcon(icon_1b4fea534d1547a40bb216e2ffa05563);
+            
+    
+            var marker_897b0dc7e3d20fb6d88c9bf5a89984b9 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_b5f3c5469a3f10a31c8a73d7e46ab127 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f28c374009c216961a883afeac1e64b2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3d7bd4c5a7d6f0554ac768cdbc40ee48 = $(`<div id="html_3d7bd4c5a7d6f0554ac768cdbc40ee48" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1978<br>Température : -0.1920833333333333 °C<br>Précipitations : 1159.3 mm<br>CO₂ émis : 263.15 Mt<br>Catastrophes : 16.0</div>`)[0];
+                popup_f28c374009c216961a883afeac1e64b2.setContent(html_3d7bd4c5a7d6f0554ac768cdbc40ee48);
+            
+        
+
+        marker_897b0dc7e3d20fb6d88c9bf5a89984b9.bindPopup(popup_f28c374009c216961a883afeac1e64b2)
+        ;
+
+        
+    
+    
+                marker_897b0dc7e3d20fb6d88c9bf5a89984b9.setIcon(icon_b5f3c5469a3f10a31c8a73d7e46ab127);
+            
+    
+            var marker_5d52ba474c4c0c60bc5c912105921532 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_0c195be06d1eb78da22658fa2b66cd6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fdc7a08d0004ccd8be987ef5517b324 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9fc6c3bb5bce278231dea38f1de4f566 = $(`<div id="html_9fc6c3bb5bce278231dea38f1de4f566" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1979<br>Température : 0.3475833333333333 °C<br>Précipitations : 1109.5 mm<br>CO₂ émis : 276.285 Mt<br>Catastrophes : 17.0</div>`)[0];
+                popup_3fdc7a08d0004ccd8be987ef5517b324.setContent(html_9fc6c3bb5bce278231dea38f1de4f566);
+            
+        
+
+        marker_5d52ba474c4c0c60bc5c912105921532.bindPopup(popup_3fdc7a08d0004ccd8be987ef5517b324)
+        ;
+
+        
+    
+    
+                marker_5d52ba474c4c0c60bc5c912105921532.setIcon(icon_0c195be06d1eb78da22658fa2b66cd6b);
+            
+    
+            var marker_33e8c6836eed0fba9ac55b6255b05468 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_a86dce162643830e6b63d23851019607 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e5a9e1a2b02fdb417c7452060e2259a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4bee1facbde244dcc2b26c84ffad68d0 = $(`<div id="html_4bee1facbde244dcc2b26c84ffad68d0" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1980<br>Température : 0.4112499999999999 °C<br>Précipitations : 1056.4 mm<br>CO₂ émis : 291.711 Mt<br>Catastrophes : 15.0</div>`)[0];
+                popup_4e5a9e1a2b02fdb417c7452060e2259a.setContent(html_4bee1facbde244dcc2b26c84ffad68d0);
+            
+        
+
+        marker_33e8c6836eed0fba9ac55b6255b05468.bindPopup(popup_4e5a9e1a2b02fdb417c7452060e2259a)
+        ;
+
+        
+    
+    
+                marker_33e8c6836eed0fba9ac55b6255b05468.setIcon(icon_a86dce162643830e6b63d23851019607);
+            
+    
+            var marker_a806de49aa51ca7ab8aa1d18c98dd723 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_4ee597691385affb5d23be8e12307109 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ef3bb90fc32f75598f8bc6d5a64242c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2168f268072087781990a629695ead0 = $(`<div id="html_c2168f268072087781990a629695ead0" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1981<br>Température : 0.0054166666666666 °C<br>Précipitations : 1076.8 mm<br>CO₂ émis : 314.966 Mt<br>Catastrophes : 8.0</div>`)[0];
+                popup_4ef3bb90fc32f75598f8bc6d5a64242c.setContent(html_c2168f268072087781990a629695ead0);
+            
+        
+
+        marker_a806de49aa51ca7ab8aa1d18c98dd723.bindPopup(popup_4ef3bb90fc32f75598f8bc6d5a64242c)
+        ;
+
+        
+    
+    
+                marker_a806de49aa51ca7ab8aa1d18c98dd723.setIcon(icon_4ee597691385affb5d23be8e12307109);
+            
+    
+            var marker_b3c171ddfc612c5096d9b297ed059d68 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_ad35cfa7cdf532687f76d52d2e00477b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_77736829e175d15e45df7eec8a756660 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0afba9ba65ddfa6b7fee1d0f9c6ecc75 = $(`<div id="html_0afba9ba65ddfa6b7fee1d0f9c6ecc75" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1982<br>Température : -0.006 °C<br>Précipitations : 1021.4 mm<br>CO₂ émis : 325.38 Mt<br>Catastrophes : 8.0</div>`)[0];
+                popup_77736829e175d15e45df7eec8a756660.setContent(html_0afba9ba65ddfa6b7fee1d0f9c6ecc75);
+            
+        
+
+        marker_b3c171ddfc612c5096d9b297ed059d68.bindPopup(popup_77736829e175d15e45df7eec8a756660)
+        ;
+
+        
+    
+    
+                marker_b3c171ddfc612c5096d9b297ed059d68.setIcon(icon_ad35cfa7cdf532687f76d52d2e00477b);
+            
+    
+            var marker_1d9154b0b4ba8d9a5ecc4bf580804331 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_b9b14b2a96b63fdb79863b5c03932a7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78790d729821e776ab9ed4744135a759 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce315d786ff8ffa0f440e5c4e5b6eda1 = $(`<div id="html_ce315d786ff8ffa0f440e5c4e5b6eda1" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1983<br>Température : -0.2505833333333333 °C<br>Précipitations : 1060.2 mm<br>CO₂ émis : 352.199 Mt<br>Catastrophes : 14.0</div>`)[0];
+                popup_78790d729821e776ab9ed4744135a759.setContent(html_ce315d786ff8ffa0f440e5c4e5b6eda1);
+            
+        
+
+        marker_1d9154b0b4ba8d9a5ecc4bf580804331.bindPopup(popup_78790d729821e776ab9ed4744135a759)
+        ;
+
+        
+    
+    
+                marker_1d9154b0b4ba8d9a5ecc4bf580804331.setIcon(icon_b9b14b2a96b63fdb79863b5c03932a7b);
+            
+    
+            var marker_788f6188c539443788f1521dff9586c9 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_54c30db897ee1e4ec987e07aa32d9e64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42185a2288b0bd2e25d9b36707f85ab8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ae332e256c76deb0ec16e71a3bcb4f6 = $(`<div id="html_6ae332e256c76deb0ec16e71a3bcb4f6" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1984<br>Température : -0.02575 °C<br>Précipitations : 1023.4 mm<br>CO₂ émis : 361.559 Mt<br>Catastrophes : 22.0</div>`)[0];
+                popup_42185a2288b0bd2e25d9b36707f85ab8.setContent(html_6ae332e256c76deb0ec16e71a3bcb4f6);
+            
+        
+
+        marker_788f6188c539443788f1521dff9586c9.bindPopup(popup_42185a2288b0bd2e25d9b36707f85ab8)
+        ;
+
+        
+    
+    
+                marker_788f6188c539443788f1521dff9586c9.setIcon(icon_54c30db897ee1e4ec987e07aa32d9e64);
+            
+    
+            var marker_84a220117fd73607d7f8b6b8ea056453 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_23bfea4dd4ae8ba052b3c21ba5d2c491 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4fe8b66bab93eb642f67e75bcade415a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d9f88678bd1720fc16dc4ee58c182041 = $(`<div id="html_d9f88678bd1720fc16dc4ee58c182041" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1985<br>Température : 0.2745833333333333 °C<br>Précipitations : 1184.3 mm<br>CO₂ émis : 397.592 Mt<br>Catastrophes : 21.0</div>`)[0];
+                popup_4fe8b66bab93eb642f67e75bcade415a.setContent(html_d9f88678bd1720fc16dc4ee58c182041);
+            
+        
+
+        marker_84a220117fd73607d7f8b6b8ea056453.bindPopup(popup_4fe8b66bab93eb642f67e75bcade415a)
+        ;
+
+        
+    
+    
+                marker_84a220117fd73607d7f8b6b8ea056453.setIcon(icon_23bfea4dd4ae8ba052b3c21ba5d2c491);
+            
+    
+            var marker_fa8ae72e340278b9b7b97f24830f13e9 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_0d02eee4cba6987e84f73bb93c00b5d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb26c276559510e96ed6074ac4310aff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ccfdf070eea88df33ba513849f03e753 = $(`<div id="html_ccfdf070eea88df33ba513849f03e753" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1986<br>Température : 0.1129166666666666 °C<br>Précipitations : 962.0 mm<br>CO₂ émis : 426.309 Mt<br>Catastrophes : 34.0</div>`)[0];
+                popup_bb26c276559510e96ed6074ac4310aff.setContent(html_ccfdf070eea88df33ba513849f03e753);
+            
+        
+
+        marker_fa8ae72e340278b9b7b97f24830f13e9.bindPopup(popup_bb26c276559510e96ed6074ac4310aff)
+        ;
+
+        
+    
+    
+                marker_fa8ae72e340278b9b7b97f24830f13e9.setIcon(icon_0d02eee4cba6987e84f73bb93c00b5d2);
+            
+    
+            var marker_6b34c7c1d78bd88960d2d797d57aed4c = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_f9a33fd7348df3e5c68fe06704a39d33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9905a6bf98dc5c2ed8f492de1cd0129 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d936ab89223bd1c9d622adfa16c770d = $(`<div id="html_9d936ab89223bd1c9d622adfa16c770d" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1987<br>Température : 0.5421666666666667 °C<br>Précipitations : 1167.9 mm<br>CO₂ émis : 455.343 Mt<br>Catastrophes : 30.0</div>`)[0];
+                popup_c9905a6bf98dc5c2ed8f492de1cd0129.setContent(html_9d936ab89223bd1c9d622adfa16c770d);
+            
+        
+
+        marker_6b34c7c1d78bd88960d2d797d57aed4c.bindPopup(popup_c9905a6bf98dc5c2ed8f492de1cd0129)
+        ;
+
+        
+    
+    
+                marker_6b34c7c1d78bd88960d2d797d57aed4c.setIcon(icon_f9a33fd7348df3e5c68fe06704a39d33);
+            
+    
+            var marker_2b3822f0f1fd425ab4a90eb1e9e6ae12 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_4ee2675ef8a6c8dbd9661699da120b83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da7e19a969a50dd4d5b8614d08cb2180 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2fc8595b5a78ffbc433c0d54d1b0ffb5 = $(`<div id="html_2fc8595b5a78ffbc433c0d54d1b0ffb5" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1988<br>Température : 0.49025 °C<br>Précipitations : 1226.4 mm<br>CO₂ émis : 491.692 Mt<br>Catastrophes : 35.0</div>`)[0];
+                popup_da7e19a969a50dd4d5b8614d08cb2180.setContent(html_2fc8595b5a78ffbc433c0d54d1b0ffb5);
+            
+        
+
+        marker_2b3822f0f1fd425ab4a90eb1e9e6ae12.bindPopup(popup_da7e19a969a50dd4d5b8614d08cb2180)
+        ;
+
+        
+    
+    
+                marker_2b3822f0f1fd425ab4a90eb1e9e6ae12.setIcon(icon_4ee2675ef8a6c8dbd9661699da120b83);
+            
+    
+            var marker_7b5e09052f2a7c4d601f2f5009fc9413 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_7191493d8f8b8602e6aca4051a199627 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d992fa456ca5431a6cec6abdea44ff6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d0ada33d19e866579ea1d505fdd206ac = $(`<div id="html_d0ada33d19e866579ea1d505fdd206ac" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1989<br>Température : -0.0894166666666666 °C<br>Précipitations : 1001.6 mm<br>CO₂ émis : 540.651 Mt<br>Catastrophes : 29.0</div>`)[0];
+                popup_6d992fa456ca5431a6cec6abdea44ff6.setContent(html_d0ada33d19e866579ea1d505fdd206ac);
+            
+        
+
+        marker_7b5e09052f2a7c4d601f2f5009fc9413.bindPopup(popup_6d992fa456ca5431a6cec6abdea44ff6)
+        ;
+
+        
+    
+    
+                marker_7b5e09052f2a7c4d601f2f5009fc9413.setIcon(icon_7191493d8f8b8602e6aca4051a199627);
+            
+    
+            var marker_130c4e0eba52e77fcbd82ab44520c1c1 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_25d2757108a54db13e84512051bc0856 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_07c4643697b35e0bc9e41eac0bde6e7e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8752ca7850a83027ed9062c251482c94 = $(`<div id="html_8752ca7850a83027ed9062c251482c94" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1990<br>Température : -0.0711666666666666 °C<br>Précipitations : 1131.8 mm<br>CO₂ émis : 577.996 Mt<br>Catastrophes : 51.0</div>`)[0];
+                popup_07c4643697b35e0bc9e41eac0bde6e7e.setContent(html_8752ca7850a83027ed9062c251482c94);
+            
+        
+
+        marker_130c4e0eba52e77fcbd82ab44520c1c1.bindPopup(popup_07c4643697b35e0bc9e41eac0bde6e7e)
+        ;
+
+        
+    
+    
+                marker_130c4e0eba52e77fcbd82ab44520c1c1.setIcon(icon_25d2757108a54db13e84512051bc0856);
+            
+    
+            var marker_1fecae019de989c49e0de5ea10545857 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_33f66206ea6913f074b96a09cc1189dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46340ead4082cfda0812a661081ba38e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ede503b1f693f65d207fe9951193cac3 = $(`<div id="html_ede503b1f693f65d207fe9951193cac3" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1991<br>Température : 0.0809166666666666 °C<br>Précipitations : 1105.7 mm<br>CO₂ émis : 615.365 Mt<br>Catastrophes : 35.0</div>`)[0];
+                popup_46340ead4082cfda0812a661081ba38e.setContent(html_ede503b1f693f65d207fe9951193cac3);
+            
+        
+
+        marker_1fecae019de989c49e0de5ea10545857.bindPopup(popup_46340ead4082cfda0812a661081ba38e)
+        ;
+
+        
+    
+    
+                marker_1fecae019de989c49e0de5ea10545857.setIcon(icon_33f66206ea6913f074b96a09cc1189dc);
+            
+    
+            var marker_34f7ca0ad9386ec6e5dd56e5b8e19434 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_c77f5e79cce7c8330c81484ed4b4c01c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_975c7f55a4007f0a8adcb16fdbc3df49 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2c33a56e7cd47e6d1715787aebbfdbaf = $(`<div id="html_2c33a56e7cd47e6d1715787aebbfdbaf" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1992<br>Température : 0.01825 °C<br>Précipitations : 998.0 mm<br>CO₂ émis : 655.447 Mt<br>Catastrophes : 27.0</div>`)[0];
+                popup_975c7f55a4007f0a8adcb16fdbc3df49.setContent(html_2c33a56e7cd47e6d1715787aebbfdbaf);
+            
+        
+
+        marker_34f7ca0ad9386ec6e5dd56e5b8e19434.bindPopup(popup_975c7f55a4007f0a8adcb16fdbc3df49)
+        ;
+
+        
+    
+    
+                marker_34f7ca0ad9386ec6e5dd56e5b8e19434.setIcon(icon_c77f5e79cce7c8330c81484ed4b4c01c);
+            
+    
+            var marker_ccab6bc63a6e7ca5ed140c62dc587db1 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_828eef243a7975df5c9bab116fc1d51f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_061c0cd92d30594f7837a83f60b33f47 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_46cc914ddf7617cfbfb46a387c51763a = $(`<div id="html_46cc914ddf7617cfbfb46a387c51763a" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1993<br>Température : 0.173 °C<br>Précipitations : 1114.7 mm<br>CO₂ émis : 677.299 Mt<br>Catastrophes : 35.0</div>`)[0];
+                popup_061c0cd92d30594f7837a83f60b33f47.setContent(html_46cc914ddf7617cfbfb46a387c51763a);
+            
+        
+
+        marker_ccab6bc63a6e7ca5ed140c62dc587db1.bindPopup(popup_061c0cd92d30594f7837a83f60b33f47)
+        ;
+
+        
+    
+    
+                marker_ccab6bc63a6e7ca5ed140c62dc587db1.setIcon(icon_828eef243a7975df5c9bab116fc1d51f);
+            
+    
+            var marker_81ba4ac2f0d8671dd8f5d5f0aba8760e = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_b43b32ad6de25b6ea39d744f581dec45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd990f32211fbc50e307c4145856ef7d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_482922dfae0b1ce2b46708ab01489f04 = $(`<div id="html_482922dfae0b1ce2b46708ab01489f04" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1994<br>Température : 0.05925 °C<br>Précipitations : 1018.8 mm<br>CO₂ émis : 714.064 Mt<br>Catastrophes : 29.0</div>`)[0];
+                popup_dd990f32211fbc50e307c4145856ef7d.setContent(html_482922dfae0b1ce2b46708ab01489f04);
+            
+        
+
+        marker_81ba4ac2f0d8671dd8f5d5f0aba8760e.bindPopup(popup_dd990f32211fbc50e307c4145856ef7d)
+        ;
+
+        
+    
+    
+                marker_81ba4ac2f0d8671dd8f5d5f0aba8760e.setIcon(icon_b43b32ad6de25b6ea39d744f581dec45);
+            
+    
+            var marker_888b48c7db7192f6ed976abb9f1ec534 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_624a9ffb182ec73f7a97cf8259944203 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4201d9c08ff50cfe28beca99866c64f0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_932a4da70a320fccf12bd44d2d6fa417 = $(`<div id="html_932a4da70a320fccf12bd44d2d6fa417" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1995<br>Température : 0.2245 °C<br>Précipitations : 1143.8 mm<br>CO₂ émis : 760.462 Mt<br>Catastrophes : 25.0</div>`)[0];
+                popup_4201d9c08ff50cfe28beca99866c64f0.setContent(html_932a4da70a320fccf12bd44d2d6fa417);
+            
+        
+
+        marker_888b48c7db7192f6ed976abb9f1ec534.bindPopup(popup_4201d9c08ff50cfe28beca99866c64f0)
+        ;
+
+        
+    
+    
+                marker_888b48c7db7192f6ed976abb9f1ec534.setIcon(icon_624a9ffb182ec73f7a97cf8259944203);
+            
+    
+            var marker_ecda18cfab63803f8dbc4c81c526fc99 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_c16b802385fa96d21fc396bb9edb8de2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a33f7e864c2523c6f54e7b25abe3ed6d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f85390e49cb31887b4f79fa5947f1dff = $(`<div id="html_f85390e49cb31887b4f79fa5947f1dff" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1996<br>Température : 0.22575 °C<br>Précipitations : 1095.6 mm<br>CO₂ émis : 823.621 Mt<br>Catastrophes : 40.0</div>`)[0];
+                popup_a33f7e864c2523c6f54e7b25abe3ed6d.setContent(html_f85390e49cb31887b4f79fa5947f1dff);
+            
+        
+
+        marker_ecda18cfab63803f8dbc4c81c526fc99.bindPopup(popup_a33f7e864c2523c6f54e7b25abe3ed6d)
+        ;
+
+        
+    
+    
+                marker_ecda18cfab63803f8dbc4c81c526fc99.setIcon(icon_c16b802385fa96d21fc396bb9edb8de2);
+            
+    
+            var marker_35335a58060d97dfc817d4351c2c27f6 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_81b66f5cc8b3ecd1c3fbb1e0a8652bc0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8c4641365f16d89087ab30cee255d7e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_989c8ad94f1e48faad2f832a7bd0a863 = $(`<div id="html_989c8ad94f1e48faad2f832a7bd0a863" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1997<br>Température : -0.1260833333333333 °C<br>Précipitations : 1039.4 mm<br>CO₂ émis : 858.011 Mt<br>Catastrophes : 54.0</div>`)[0];
+                popup_d8c4641365f16d89087ab30cee255d7e.setContent(html_989c8ad94f1e48faad2f832a7bd0a863);
+            
+        
+
+        marker_35335a58060d97dfc817d4351c2c27f6.bindPopup(popup_d8c4641365f16d89087ab30cee255d7e)
+        ;
+
+        
+    
+    
+                marker_35335a58060d97dfc817d4351c2c27f6.setIcon(icon_81b66f5cc8b3ecd1c3fbb1e0a8652bc0);
+            
+    
+            var marker_7948b6c616433d968bdb367cb530be10 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_ae7d5b82cceb65656cc0d386a9f8701e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a957b290ed0daeef7bef5430e18713f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3da64c33ee1c23c7938999f7b28255ec = $(`<div id="html_3da64c33ee1c23c7938999f7b28255ec" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1998<br>Température : 0.5709166666666666 °C<br>Précipitations : 1092.6 mm<br>CO₂ émis : 875.772 Mt<br>Catastrophes : 52.0</div>`)[0];
+                popup_1a957b290ed0daeef7bef5430e18713f.setContent(html_3da64c33ee1c23c7938999f7b28255ec);
+            
+        
+
+        marker_7948b6c616433d968bdb367cb530be10.bindPopup(popup_1a957b290ed0daeef7bef5430e18713f)
+        ;
+
+        
+    
+    
+                marker_7948b6c616433d968bdb367cb530be10.setIcon(icon_ae7d5b82cceb65656cc0d386a9f8701e);
+            
+    
+            var marker_91f1deebfbab0aa9be43be84c74fd24b = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_df18db5b59a8cb717a34c301c4a13bdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6eab2326a720a9560e3c76322242561a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d531634859cd4bbc77ee00b6b6bcd057 = $(`<div id="html_d531634859cd4bbc77ee00b6b6bcd057" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 1999<br>Température : 0.4596666666666666 °C<br>Précipitations : 1142.3 mm<br>CO₂ émis : 960.763 Mt<br>Catastrophes : 39.0</div>`)[0];
+                popup_6eab2326a720a9560e3c76322242561a.setContent(html_d531634859cd4bbc77ee00b6b6bcd057);
+            
+        
+
+        marker_91f1deebfbab0aa9be43be84c74fd24b.bindPopup(popup_6eab2326a720a9560e3c76322242561a)
+        ;
+
+        
+    
+    
+                marker_91f1deebfbab0aa9be43be84c74fd24b.setIcon(icon_df18db5b59a8cb717a34c301c4a13bdc);
+            
+    
+            var marker_dd05f14ab1126588a56f6b6cfa2a66e3 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_2b6b1af284e66521a7e6f242c3b49abe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f346a82fcf27c4bada6f13241054ddf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7527e03e2bf6e2943bd435c4f538ed86 = $(`<div id="html_7527e03e2bf6e2943bd435c4f538ed86" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2000<br>Température : 0.3226666666666667 °C<br>Précipitations : 1221.8 mm<br>CO₂ émis : 986.445 Mt<br>Catastrophes : 45.0</div>`)[0];
+                popup_5f346a82fcf27c4bada6f13241054ddf.setContent(html_7527e03e2bf6e2943bd435c4f538ed86);
+            
+        
+
+        marker_dd05f14ab1126588a56f6b6cfa2a66e3.bindPopup(popup_5f346a82fcf27c4bada6f13241054ddf)
+        ;
+
+        
+    
+    
+                marker_dd05f14ab1126588a56f6b6cfa2a66e3.setIcon(icon_2b6b1af284e66521a7e6f242c3b49abe);
+            
+    
+            var marker_26b88fbc23f06a1277243c523906a982 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_adde5a4e36ff7cbca5d3cf7c3bc9fa06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cde5771901d5ad31218ef1a63432e84d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_914a18f993ac53b33abc7270701af09b = $(`<div id="html_914a18f993ac53b33abc7270701af09b" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2001<br>Température : 0.4304166666666666 °C<br>Précipitations : 1191.0 mm<br>CO₂ émis : 1000.527 Mt<br>Catastrophes : 39.0</div>`)[0];
+                popup_cde5771901d5ad31218ef1a63432e84d.setContent(html_914a18f993ac53b33abc7270701af09b);
+            
+        
+
+        marker_26b88fbc23f06a1277243c523906a982.bindPopup(popup_cde5771901d5ad31218ef1a63432e84d)
+        ;
+
+        
+    
+    
+                marker_26b88fbc23f06a1277243c523906a982.setIcon(icon_adde5a4e36ff7cbca5d3cf7c3bc9fa06);
+            
+    
+            var marker_ad05ec9de3579a9cc874a62275a4e2c1 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_1c2bac2143890349829445dc6a137ba6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd370de35111fe49c64ab3e0319123e0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2087f29462a1f5a0ded2445293e3cca2 = $(`<div id="html_2087f29462a1f5a0ded2445293e3cca2" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2002<br>Température : 0.77025 °C<br>Précipitations : 1057.6 mm<br>CO₂ émis : 1032.14 Mt<br>Catastrophes : 45.0</div>`)[0];
+                popup_cd370de35111fe49c64ab3e0319123e0.setContent(html_2087f29462a1f5a0ded2445293e3cca2);
+            
+        
+
+        marker_ad05ec9de3579a9cc874a62275a4e2c1.bindPopup(popup_cd370de35111fe49c64ab3e0319123e0)
+        ;
+
+        
+    
+    
+                marker_ad05ec9de3579a9cc874a62275a4e2c1.setIcon(icon_1c2bac2143890349829445dc6a137ba6);
+            
+    
+            var marker_1e692cb934d8fbfe96f08cfd0ac08642 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_a7ac9ef0d67e58e824b126803d4d4285 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa5d03192a57c90d9d27f2f1ac769ab8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2689ccf64b0359b73ad8af3abf3ca147 = $(`<div id="html_2689ccf64b0359b73ad8af3abf3ca147" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2003<br>Température : 0.51125 °C<br>Précipitations : 1190.2 mm<br>CO₂ émis : 1067.737 Mt<br>Catastrophes : 47.0</div>`)[0];
+                popup_fa5d03192a57c90d9d27f2f1ac769ab8.setContent(html_2689ccf64b0359b73ad8af3abf3ca147);
+            
+        
+
+        marker_1e692cb934d8fbfe96f08cfd0ac08642.bindPopup(popup_fa5d03192a57c90d9d27f2f1ac769ab8)
+        ;
+
+        
+    
+    
+                marker_1e692cb934d8fbfe96f08cfd0ac08642.setIcon(icon_a7ac9ef0d67e58e824b126803d4d4285);
+            
+    
+            var marker_cc1a37f714a29d74b3d19c719563f3a7 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_056cf34a142e9796e130147d085c0c8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39d9b7488529025b311f28c24ba9e880 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_84a2c39233dcd0e80578ab0a7590f3ba = $(`<div id="html_84a2c39233dcd0e80578ab0a7590f3ba" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2004<br>Température : 0.5160833333333333 °C<br>Précipitations : 1203.3 mm<br>CO₂ émis : 1133.828 Mt<br>Catastrophes : 27.0</div>`)[0];
+                popup_39d9b7488529025b311f28c24ba9e880.setContent(html_84a2c39233dcd0e80578ab0a7590f3ba);
+            
+        
+
+        marker_cc1a37f714a29d74b3d19c719563f3a7.bindPopup(popup_39d9b7488529025b311f28c24ba9e880)
+        ;
+
+        
+    
+    
+                marker_cc1a37f714a29d74b3d19c719563f3a7.setIcon(icon_056cf34a142e9796e130147d085c0c8c);
+            
+    
+            var marker_f517f79f9bddc3ed430d33d4a265bd7a = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_bf998ca4eb47b13410aeadc4043a4b1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2df6ed5bae2240892425aca4a74058c7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6593620f589ba90ff8507fb78206d6d5 = $(`<div id="html_6593620f589ba90ff8507fb78206d6d5" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2005<br>Température : 0.4138333333333333 °C<br>Précipitations : 922.0 mm<br>CO₂ émis : 1194.592 Mt<br>Catastrophes : 64.0</div>`)[0];
+                popup_2df6ed5bae2240892425aca4a74058c7.setContent(html_6593620f589ba90ff8507fb78206d6d5);
+            
+        
+
+        marker_f517f79f9bddc3ed430d33d4a265bd7a.bindPopup(popup_2df6ed5bae2240892425aca4a74058c7)
+        ;
+
+        
+    
+    
+                marker_f517f79f9bddc3ed430d33d4a265bd7a.setIcon(icon_bf998ca4eb47b13410aeadc4043a4b1a);
+            
+    
+            var marker_6ff4ced0eb9908d25eaf1da5e4181a02 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_825534f5ad9deb4da485ebf1cf51d6b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f60cfd9decf5a7324381a82e0a47c136 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_016ab13ae9b68bb3cdcd0803bdd73d20 = $(`<div id="html_016ab13ae9b68bb3cdcd0803bdd73d20" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2006<br>Température : 0.6721666666666667 °C<br>Précipitations : 961.7 mm<br>CO₂ émis : 1292.485 Mt<br>Catastrophes : 37.0</div>`)[0];
+                popup_f60cfd9decf5a7324381a82e0a47c136.setContent(html_016ab13ae9b68bb3cdcd0803bdd73d20);
+            
+        
+
+        marker_6ff4ced0eb9908d25eaf1da5e4181a02.bindPopup(popup_f60cfd9decf5a7324381a82e0a47c136)
+        ;
+
+        
+    
+    
+                marker_6ff4ced0eb9908d25eaf1da5e4181a02.setIcon(icon_825534f5ad9deb4da485ebf1cf51d6b2);
+            
+    
+            var marker_a836e08a9b795f7424926cec27a71195 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_890764129865cfd9fbf3e4c460446abb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6e644102584c21ca6c27e5a6701250d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cdaa08df8ba202cd664ff2b2ff248f4e = $(`<div id="html_cdaa08df8ba202cd664ff2b2ff248f4e" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2007<br>Température : 0.5348333333333334 °C<br>Précipitations : 1026.3 mm<br>CO₂ émis : 1392.506 Mt<br>Catastrophes : 38.0</div>`)[0];
+                popup_e6e644102584c21ca6c27e5a6701250d.setContent(html_cdaa08df8ba202cd664ff2b2ff248f4e);
+            
+        
+
+        marker_a836e08a9b795f7424926cec27a71195.bindPopup(popup_e6e644102584c21ca6c27e5a6701250d)
+        ;
+
+        
+    
+    
+                marker_a836e08a9b795f7424926cec27a71195.setIcon(icon_890764129865cfd9fbf3e4c460446abb);
+            
+    
+            var marker_52c899596a73ad6453b9fae86580b4a8 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_d32023953c8f9715648526611bc43e88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da8f3aeab23918480698bd0e3fd74b7d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e6e7d1757e4018d5384c6f9a1cd3c251 = $(`<div id="html_e6e7d1757e4018d5384c6f9a1cd3c251" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2008<br>Température : 0.3134166666666667 °C<br>Précipitations : 1141.6 mm<br>CO₂ émis : 1489.437 Mt<br>Catastrophes : 24.0</div>`)[0];
+                popup_da8f3aeab23918480698bd0e3fd74b7d.setContent(html_e6e7d1757e4018d5384c6f9a1cd3c251);
+            
+        
+
+        marker_52c899596a73ad6453b9fae86580b4a8.bindPopup(popup_da8f3aeab23918480698bd0e3fd74b7d)
+        ;
+
+        
+    
+    
+                marker_52c899596a73ad6453b9fae86580b4a8.setIcon(icon_d32023953c8f9715648526611bc43e88);
+            
+    
+            var marker_c06aee9dd5db81b2dc5a3d6b358ed1e4 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_f32cf509b6694bdcbb2bda980c87d19a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e7254b6591d36be0686d16c2634f7f9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_16d2e7239a316e47d82bb896dccf2064 = $(`<div id="html_16d2e7239a316e47d82bb896dccf2064" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2009<br>Température : 1.0445 °C<br>Précipitations : 1051.1 mm<br>CO₂ émis : 1612.216 Mt<br>Catastrophes : 25.0</div>`)[0];
+                popup_6e7254b6591d36be0686d16c2634f7f9.setContent(html_16d2e7239a316e47d82bb896dccf2064);
+            
+        
+
+        marker_c06aee9dd5db81b2dc5a3d6b358ed1e4.bindPopup(popup_6e7254b6591d36be0686d16c2634f7f9)
+        ;
+
+        
+    
+    
+                marker_c06aee9dd5db81b2dc5a3d6b358ed1e4.setIcon(icon_f32cf509b6694bdcbb2bda980c87d19a);
+            
+    
+            var marker_a571ab62c20e69b525d6f9c0b251b941 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_ea2ea823b327802358b7d3e79a750c01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38eb03144fa57c21c4f4cdb58ddc2a2c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ab01a56f292d9d5d8bba025b71bedd04 = $(`<div id="html_ab01a56f292d9d5d8bba025b71bedd04" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2010<br>Température : 0.963 °C<br>Précipitations : 977.8 mm<br>CO₂ émis : 1677.337 Mt<br>Catastrophes : 37.0</div>`)[0];
+                popup_38eb03144fa57c21c4f4cdb58ddc2a2c.setContent(html_ab01a56f292d9d5d8bba025b71bedd04);
+            
+        
+
+        marker_a571ab62c20e69b525d6f9c0b251b941.bindPopup(popup_38eb03144fa57c21c4f4cdb58ddc2a2c)
+        ;
+
+        
+    
+    
+                marker_a571ab62c20e69b525d6f9c0b251b941.setIcon(icon_ea2ea823b327802358b7d3e79a750c01);
+            
+    
+            var marker_4b72a9b20372a40a24e615054aa72ae6 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_5ace5f352a5d9c8742f755fc529df9aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d4c954fb898571f76453d780692ae1e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68e6de264b6806e783e8608bc56c0a6d = $(`<div id="html_68e6de264b6806e783e8608bc56c0a6d" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2011<br>Température : 0.3463333333333333 °C<br>Précipitations : 1298.4 mm<br>CO₂ émis : 1764.712 Mt<br>Catastrophes : 26.0</div>`)[0];
+                popup_3d4c954fb898571f76453d780692ae1e.setContent(html_68e6de264b6806e783e8608bc56c0a6d);
+            
+        
+
+        marker_4b72a9b20372a40a24e615054aa72ae6.bindPopup(popup_3d4c954fb898571f76453d780692ae1e)
+        ;
+
+        
+    
+    
+                marker_4b72a9b20372a40a24e615054aa72ae6.setIcon(icon_5ace5f352a5d9c8742f755fc529df9aa);
+            
+    
+            var marker_3c8cac141e3a493bda701803490995b4 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_2c47e97ac174fb276d18c2725bfa6b1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_176d1adc5e106294ea7c9115e1fa83b2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bb9766b94fc8dda115a1253fc2f456b7 = $(`<div id="html_bb9766b94fc8dda115a1253fc2f456b7" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2012<br>Température : 0.44875 °C<br>Précipitations : 1066.3 mm<br>CO₂ émis : 1925.7 Mt<br>Catastrophes : 19.0</div>`)[0];
+                popup_176d1adc5e106294ea7c9115e1fa83b2.setContent(html_bb9766b94fc8dda115a1253fc2f456b7);
+            
+        
+
+        marker_3c8cac141e3a493bda701803490995b4.bindPopup(popup_176d1adc5e106294ea7c9115e1fa83b2)
+        ;
+
+        
+    
+    
+                marker_3c8cac141e3a493bda701803490995b4.setIcon(icon_2c47e97ac174fb276d18c2725bfa6b1a);
+            
+    
+            var marker_f6243a6c83b624ed22f3f4d94b8ac249 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_a4f22d98a6377454de60f061fc8db524 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a28ae7abb57174e884006f5f3fb49b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3addca230aafd3bdaca3f4458fa034d2 = $(`<div id="html_3addca230aafd3bdaca3f4458fa034d2" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2013<br>Température : 0.3206666666666666 °C<br>Précipitations : 1149.7 mm<br>CO₂ émis : 1995.098 Mt<br>Catastrophes : 27.0</div>`)[0];
+                popup_1a28ae7abb57174e884006f5f3fb49b6.setContent(html_3addca230aafd3bdaca3f4458fa034d2);
+            
+        
+
+        marker_f6243a6c83b624ed22f3f4d94b8ac249.bindPopup(popup_1a28ae7abb57174e884006f5f3fb49b6)
+        ;
+
+        
+    
+    
+                marker_f6243a6c83b624ed22f3f4d94b8ac249.setIcon(icon_a4f22d98a6377454de60f061fc8db524);
+            
+    
+            var marker_ad2c16b5353bd26455da9c0ed47e26d6 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_00d52bf9de305317193b6bd46abad592 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83ff58101ed34c414ec34e28087a2b14 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c8a59841f8872bb9ab3e46e54e38acae = $(`<div id="html_c8a59841f8872bb9ab3e46e54e38acae" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2014<br>Température : 0.5045000000000001 °C<br>Précipitations : 1067.8 mm<br>CO₂ émis : 2148.344 Mt<br>Catastrophes : 32.0</div>`)[0];
+                popup_83ff58101ed34c414ec34e28087a2b14.setContent(html_c8a59841f8872bb9ab3e46e54e38acae);
+            
+        
+
+        marker_ad2c16b5353bd26455da9c0ed47e26d6.bindPopup(popup_83ff58101ed34c414ec34e28087a2b14)
+        ;
+
+        
+    
+    
+                marker_ad2c16b5353bd26455da9c0ed47e26d6.setIcon(icon_00d52bf9de305317193b6bd46abad592);
+            
+    
+            var marker_ede568fa218ac08f572a1c01839076c6 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_7b3b1ba58ea0da11d78ef35851f57bb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9e4071a04709eb2ec9f354e07b6df3c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_abe19555c14d117258b325bb30b96daf = $(`<div id="html_abe19555c14d117258b325bb30b96daf" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2015<br>Température : 0.7538333333333332 °C<br>Précipitations : 1013.1 mm<br>CO₂ émis : 2234.219 Mt<br>Catastrophes : 33.0</div>`)[0];
+                popup_f9e4071a04709eb2ec9f354e07b6df3c.setContent(html_abe19555c14d117258b325bb30b96daf);
+            
+        
+
+        marker_ede568fa218ac08f572a1c01839076c6.bindPopup(popup_f9e4071a04709eb2ec9f354e07b6df3c)
+        ;
+
+        
+    
+    
+                marker_ede568fa218ac08f572a1c01839076c6.setIcon(icon_7b3b1ba58ea0da11d78ef35851f57bb0);
+            
+    
+            var marker_b55060baf5930cc409c52fbce4992826 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_c438b25cf0a13ffa6b5c6e7f2ae77cd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b37059df37be42f660c754800618882e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e1f3ffc36077f8f42a998280ab6ae877 = $(`<div id="html_e1f3ffc36077f8f42a998280ab6ae877" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2016<br>Température : 1.06075 °C<br>Précipitations : 1231.7 mm<br>CO₂ émis : 2354.658 Mt<br>Catastrophes : 34.0</div>`)[0];
+                popup_b37059df37be42f660c754800618882e.setContent(html_e1f3ffc36077f8f42a998280ab6ae877);
+            
+        
+
+        marker_b55060baf5930cc409c52fbce4992826.bindPopup(popup_b37059df37be42f660c754800618882e)
+        ;
+
+        
+    
+    
+                marker_b55060baf5930cc409c52fbce4992826.setIcon(icon_c438b25cf0a13ffa6b5c6e7f2ae77cd9);
+            
+    
+            var marker_c5d87e3053279d8db09223d3721c2a98 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_8720c08f310a4e7ad3438c6a4715d43c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_172621c3ad54197309a5792a1c29da89 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d2f63472fede5b28dcb83e7eed28976 = $(`<div id="html_7d2f63472fede5b28dcb83e7eed28976" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2017<br>Température : 0.90075 °C<br>Précipitations : 944.7 mm<br>CO₂ émis : 2426.607 Mt<br>Catastrophes : 41.0</div>`)[0];
+                popup_172621c3ad54197309a5792a1c29da89.setContent(html_7d2f63472fede5b28dcb83e7eed28976);
+            
+        
+
+        marker_c5d87e3053279d8db09223d3721c2a98.bindPopup(popup_172621c3ad54197309a5792a1c29da89)
+        ;
+
+        
+    
+    
+                marker_c5d87e3053279d8db09223d3721c2a98.setIcon(icon_8720c08f310a4e7ad3438c6a4715d43c);
+            
+    
+            var marker_df4ae0f9cc32748af0b55d189227aef7 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_7c2f704fd58f99822f0935a8b23c73fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_432791b3aed0480820e1ecfb49072010 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c56917dc1b37f101eb41aae4c950732e = $(`<div id="html_c56917dc1b37f101eb41aae4c950732e" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2018<br>Température : 0.7800833333333334 °C<br>Précipitations : 1007.5 mm<br>CO₂ émis : 2593.058 Mt<br>Catastrophes : 36.0</div>`)[0];
+                popup_432791b3aed0480820e1ecfb49072010.setContent(html_c56917dc1b37f101eb41aae4c950732e);
+            
+        
+
+        marker_df4ae0f9cc32748af0b55d189227aef7.bindPopup(popup_432791b3aed0480820e1ecfb49072010)
+        ;
+
+        
+    
+    
+                marker_df4ae0f9cc32748af0b55d189227aef7.setIcon(icon_7c2f704fd58f99822f0935a8b23c73fa);
+            
+    
+            var marker_cec07d65eba1e03ed54e54b188010901 = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_5a09bb481540cbe41b4adedf01ac459c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e6177fec1fb70aec13ffc652fd828558 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_58475628b6012a5527b87710c0f96532 = $(`<div id="html_58475628b6012a5527b87710c0f96532" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2019<br>Température : 0.7249166666666667 °C<br>Précipitations : 1232.8 mm<br>CO₂ émis : 2612.888 Mt<br>Catastrophes : 24.0</div>`)[0];
+                popup_e6177fec1fb70aec13ffc652fd828558.setContent(html_58475628b6012a5527b87710c0f96532);
+            
+        
+
+        marker_cec07d65eba1e03ed54e54b188010901.bindPopup(popup_e6177fec1fb70aec13ffc652fd828558)
+        ;
+
+        
+    
+    
+                marker_cec07d65eba1e03ed54e54b188010901.setIcon(icon_5a09bb481540cbe41b4adedf01ac459c);
+            
+    
+            var marker_3e4dd37085f45b52f543b6732cba617f = L.marker(
+                [20.593684, 78.96288],
+                {
+}
+            ).addTo(marker_cluster_5a5a053d35aa1daf614670003f731f33);
+        
+    
+            var icon_2ca50d9aa3ea9eaca20eed1b1316739b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7967d5d39cf71d9fcfadab99b22cb6f4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_96c1be3220d22c88543aa2dd51927ed6 = $(`<div id="html_96c1be3220d22c88543aa2dd51927ed6" style="width: 100.0%; height: 100.0%;"><b>Pays :</b> Inde<br><b>Année :</b> 2020<br>Température : 0.43075 °C<br>Précipitations : 1049.4 mm<br>CO₂ émis : 2421.552 Mt<br>Catastrophes : 17.0</div>`)[0];
+                popup_7967d5d39cf71d9fcfadab99b22cb6f4.setContent(html_96c1be3220d22c88543aa2dd51927ed6);
+            
+        
+
+        marker_3e4dd37085f45b52f543b6732cba617f.bindPopup(popup_7967d5d39cf71d9fcfadab99b22cb6f4)
+        ;
+
+        
+    
+    
+                marker_3e4dd37085f45b52f543b6732cba617f.setIcon(icon_2ca50d9aa3ea9eaca20eed1b1316739b);
+            
+    
+            marker_cluster_5a5a053d35aa1daf614670003f731f33.addTo(map_f6dcad650a306ba91800785ecf0ae471);
+        
+</script>
+</html>
