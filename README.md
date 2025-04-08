@@ -18,7 +18,8 @@ Le dépôt contient :
 - **Fréquence :** Annuelle (moyennes) / Mensuelle (brutes)
 - **Licence :** Open Data Commons Attribution (ODC-By)
 - **Format :** CSV, TXT, XLSX, HTML, Notebook Jupyter (`.ipynb`)
-  Résumé :
+
+_ Résumé :
   Ce jeu de données a été utilisé pour comparer l’évolution climatique entre la France et l’Inde sur la période 1970–2020. Il combine des données issues de sources ouvertes sur la température, les précipitations, les émissions de gaz à effet de serre (CO₂) et les catastrophes naturelles. Le jeu a été nettoyé, fusionné et enrichi pour permettre une analyse comparative, exploratoire et prédictive.
 
 ---
