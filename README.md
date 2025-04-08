@@ -20,3 +20,5 @@ Le dépôt contient :
 ├── 📁 Données (.csv, .txt, .xlsx)              # Données originales et combinées
 ├── 📄 *.html                                     # Cartes interactives et heatmaps
 ├── 📄 README.md                                  # Ce guide de navigation
+
+Les phases vont de la phase 1 - 6
